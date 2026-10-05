@@ -1,0 +1,2 @@
+namespace Engineering.Application.Services.Contracts.Contracts.DeleteContractAdjustmentConfiguration;
+public record DeleteContractAdjustmentConfigurationResponse(bool IsDone);

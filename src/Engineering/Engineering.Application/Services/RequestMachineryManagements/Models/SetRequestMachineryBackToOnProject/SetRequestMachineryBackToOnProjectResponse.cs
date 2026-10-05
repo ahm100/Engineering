@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryBackToOnProject;
+
+public record SetRequestMachineryBackToOnProjectResponse(List<long> RequestMachineryIds, bool UpdateState);

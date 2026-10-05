@@ -1,0 +1,6 @@
+﻿using Engineering.Application.Services.GoodsManagerAssignments.Contracts.GetFilteredGoodsManagerAssignments;
+
+namespace Engineering.Application.Services.GoodsManagerAssignments.Contracts.GetGoodsManagerAssignmentsById;
+
+public record GetGoodsManagerAssignmentsByIdResponse(
+    GetFilteredOrganizationModel Data);

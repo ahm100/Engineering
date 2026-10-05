@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.RequestGoodsSupplies;
+
+namespace Engineering.Application.Services.RequestGoodsSupplyDetails.Commands.ComparisonrequestGoodSupplyProductScale;
+
+public record ComparisonrequestGoodSupplyProductScaleCommand() : ICommand<RequestGoodsSupplyDetail>;

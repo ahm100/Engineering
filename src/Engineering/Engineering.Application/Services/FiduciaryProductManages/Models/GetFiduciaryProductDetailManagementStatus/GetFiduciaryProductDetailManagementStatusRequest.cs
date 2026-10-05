@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FiduciaryProductManages.Models.GetFiduciaryProductDetailManagementStatus;
+
+public record GetFiduciaryProductDetailManagementStatusRequest() : IHttpRequest;

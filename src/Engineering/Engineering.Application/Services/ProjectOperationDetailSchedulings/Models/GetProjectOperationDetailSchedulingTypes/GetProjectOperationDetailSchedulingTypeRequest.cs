@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectOperationDetailSchedulings.Models.GetProjectOperationDetailSchedulingTypes;
+
+public record GetProjectOperationDetailSchedulingTypeRequest() : IHttpRequest;

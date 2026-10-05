@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.DailyProjectOperations;
+
+namespace Engineering.Application.Services.DailyProjectOperations.Commands.DeleteDailyProjectOperationRequestReward;
+
+public record DeleteDailyProjectOperationRequestRewardCommand(long DeleteDailyProjectOperationRequestRewardId) : ICommand<DailyProjectOperationRequestReward>;

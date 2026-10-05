@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryPending;
+
+public record SetRequestMachineryPendingResponse(long RequestMachineryId);

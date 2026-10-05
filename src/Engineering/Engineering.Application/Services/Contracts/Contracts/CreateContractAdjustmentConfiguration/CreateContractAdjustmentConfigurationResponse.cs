@@ -1,0 +1,2 @@
+namespace Engineering.Application.Services.Contracts.Contracts.CreateContractAdjustmentConfiguration;
+public record CreateContractAdjustmentConfigurationResponse(long Id, bool IsDone);

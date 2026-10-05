@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectOperationTemporaryDailies.Models.CreateProjectOperationTemporaryDaily;
+
+public record CreateProjectOperationTemporaryDailyResponse(long ProjectOperationTemporaryDailyId);

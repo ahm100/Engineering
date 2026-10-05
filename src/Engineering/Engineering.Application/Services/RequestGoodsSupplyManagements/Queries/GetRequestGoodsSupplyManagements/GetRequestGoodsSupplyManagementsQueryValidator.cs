@@ -1,0 +1,7 @@
+﻿
+namespace Engineering.Application.RequestGoodsSupplyManagements.Queries.GetRequestGoodsSupplyManagements;
+
+public class GetRequestGoodsSupplyManagementsQueryValidator
+{
+
+}

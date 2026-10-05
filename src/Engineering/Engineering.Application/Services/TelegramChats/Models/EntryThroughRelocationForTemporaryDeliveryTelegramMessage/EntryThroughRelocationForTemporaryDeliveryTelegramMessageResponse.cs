@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.TelegramChats.Models.EntryThroughRelocationForTemporaryDeliveryTelegramMessage;
+
+public record EntryThroughRelocationForTemporaryDeliveryTelegramMessageResponse(bool IsDone);

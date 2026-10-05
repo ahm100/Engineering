@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.CostCenters;
+
+namespace Engineering.Application.Services.CostCenterVirtualGroups.Queries.GetCreateCostCenterVirtualGroupById;
+
+public record GetCreateCostCenterVirtualGroupByIdQuery(long CostCenterVirtualGroupId) : IQuery<CostCenterVirtualGroup>;

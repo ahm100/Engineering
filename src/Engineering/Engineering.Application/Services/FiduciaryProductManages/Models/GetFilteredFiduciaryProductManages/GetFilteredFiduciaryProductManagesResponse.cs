@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FiduciaryProductManages.Models.GetFilteredFiduciaryProductManages;
+
+public record GetFilteredFiduciaryProductManagesResponse(List<GetFilteredFiduciaryProductManagesModel> Data, int RowCount);

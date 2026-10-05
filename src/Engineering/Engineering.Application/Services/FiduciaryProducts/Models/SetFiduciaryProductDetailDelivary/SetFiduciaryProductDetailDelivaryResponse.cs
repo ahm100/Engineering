@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FiduciaryProducts.Models.SetFiduciaryProductDetailDelivary;
+
+public record SetFiduciaryProductDetailDelivaryResponse(long FiduciaryProductDetailId);

@@ -1,0 +1,6 @@
+﻿using Engineering.Application.Services.RequestContractors.Models.GetRequestContractorById;
+
+namespace Engineering.Application.Services.RequestContractors.Queries.GetRequestContractorModelById;
+
+public record GetRequestContractorModelByIdQuery(long RequestContractorId) : IQuery<GetRequestContractorByIdResponse>;
+

@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestGoodsSupplies.Models.SetOperationInfoSeasonToGoodsSupply;
+
+public record SetOperationInfoSeasonToGoodsSupplyResponse(bool IsDone);

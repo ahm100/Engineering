@@ -1,0 +1,10 @@
+﻿global using Ardalis.GuardClauses;
+global using Engineering.Domain.Cmts;
+global using Engineering.Domain.Entities.Branchs;
+global using Engineering.Domain.Entities.Categories;
+global using Engineering.Domain.Entities.OperationInfos;
+global using Engineering.Domain.Entities.OperationInfos.ConsumptionStandards;
+global using Engineering.Domain.Entities.RequestMachineries;
+global using Engineering.Domain.Entities.Seasons;
+global using Gita.Backend.Shared.Domain.Base;
+global using System.ComponentModel;

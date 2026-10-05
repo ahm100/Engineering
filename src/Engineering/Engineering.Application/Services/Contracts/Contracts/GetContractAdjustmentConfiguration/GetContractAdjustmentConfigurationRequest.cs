@@ -1,0 +1,2 @@
+namespace Engineering.Application.Services.Contracts.Contracts.GetContractAdjustmentConfiguration;
+public record GetContractAdjustmentConfigurationRequest(long ContractId) : IHttpRequest;

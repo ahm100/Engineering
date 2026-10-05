@@ -1,0 +1,9 @@
+﻿using Engineering.Domain.Entities.DailyProjectOperations;
+using Engineering.Domain.Entities.EmployerStatusStatements;
+
+namespace Engineering.Application.Services.EmployerStatusStatements.Commands.CreateEmployerStatusStatementProjectOperationDetailDaily;
+
+public record CreateEmployerStatusStatementProjectOperationDetailDailyCommand(
+    EmployerStatusStatementProjectOperationDetail StatementProjectOperationDetail,
+    DailyProjectOperation DailyProjectOperation
+    ) : ICommand<EmployerStatusStatementProjectOperationDetailDaily>;

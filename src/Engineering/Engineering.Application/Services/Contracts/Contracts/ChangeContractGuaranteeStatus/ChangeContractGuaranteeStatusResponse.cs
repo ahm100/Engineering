@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.Contracts.Contracts.ChangeContractGuaranteeStatus;
+
+public record ChangeContractGuaranteeStatusResponse(bool IsDone);

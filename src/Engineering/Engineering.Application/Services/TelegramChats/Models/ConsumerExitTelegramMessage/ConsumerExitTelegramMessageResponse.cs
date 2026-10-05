@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.TelegramChats.Models.ConsumerExitTelegramMessage;
+
+public record ConsumerExitTelegramMessageResponse(bool IsDone);

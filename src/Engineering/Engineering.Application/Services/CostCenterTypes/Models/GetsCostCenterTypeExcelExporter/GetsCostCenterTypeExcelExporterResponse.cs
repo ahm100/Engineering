@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.CostCenterTypes.Models.GetsCostCenterTypeExcelExporter;
+
+public record GetsCostCenterTypeExcelExporterResponse(FileContentResult File);

@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineries.Models.UpdateRequestMachineryDriver;
+
+public record UpdateRequestMachineryDriverResponse(long RequestMachineryId);

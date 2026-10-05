@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FiduciaryProductManages.Models.GetFiduciaryProductDetailReturnByDetailId;
+
+public record GetFiduciaryProductDetailReturnByDetailIdRequest(long FiduciaryProductDetailId) : IHttpRequest;

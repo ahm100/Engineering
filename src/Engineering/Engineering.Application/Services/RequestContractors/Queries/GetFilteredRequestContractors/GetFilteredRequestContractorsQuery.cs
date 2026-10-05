@@ -1,0 +1,22 @@
+﻿using Engineering.Application.Services.RequestContractors.Models.GetFilteredRequestContractors;
+using Engineering.Domain.Entities.RequestContractors.Enums;
+
+namespace Engineering.Application.Services.RequestContractors.Queries.GetFilteredRequestContractors;
+
+public record GetFilteredRequestContractorsQuery(
+        List<long>? Ids,
+        List<long>? CostCenterIds,
+        List<long>? ProjectIds,
+        List<long>? ProjectOperationIds,
+        List<long>? ProjectOperationDetailIds,
+        List<long>? ServiceInfoIds,
+        List<long>? ContractorIds,
+        RequestContractorStatus? Status,
+        DateTime? FromDate,
+        DateTime? ToDate,
+        long? CreatorId,
+        string? FilterData,
+        string[]? OrderBy,
+        long? CompanyId,
+        int PageIndex,
+        int PageSize) : IQuery<DataResult<List<GetFilteredRequestContractorsModel>>>;

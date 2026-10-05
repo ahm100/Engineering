@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.CostCenterVirtualGroups.Models.UpdateCostCenterVirtualGroupAdmin;
+
+public record UpdateCostCenterVirtualGroupAdminResponse(long CostCenterVirtualGroupAdminId);

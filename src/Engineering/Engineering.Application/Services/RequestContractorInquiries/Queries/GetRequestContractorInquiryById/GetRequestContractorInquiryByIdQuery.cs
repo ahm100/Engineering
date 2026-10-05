@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.RequestContractors;
+
+namespace Engineering.Application.Services.RequestContractorInquiries.Queries.GetRequestContractorInquiryById;
+
+public record GetRequestContractorInquiryByIdQuery(long RequestContractorInquiryId) : IQuery<RequestContractorInquiry>;

@@ -1,0 +1,17 @@
+﻿using Engineering.Application.Services.ProjectOperationDetailSchedulings.Models.GetProjectOperationDetails;
+using Engineering.Application.Services.ProjectOperationDetailSchedulings.Models.GetProjectOperationDetailSchedulingTypes;
+using Engineering.Application.Services.ProjectOperationDetailSchedulings.Models.GetSchedulingProjectOperationDetails;
+using Engineering.Application.Services.ProjectOperationDetailSchedulings.Models.GetSchedulingProjectOperations;
+using Engineering.Application.Services.ProjectOperationDetailSchedulings.Models.UpdateProjectOperationDetailDatesByDate;
+using Engineering.Application.Services.ProjectOperationDetailSchedulings.Models.UpdateProjectOperationDetailDatesByDay;
+
+namespace Engineering.Application.Services.ProjectOperationDetailSchedulings;
+
+public interface IProjectOperationDetailSchedulingLogic
+{
+    Task<Result<GetProjectOperationDetailSchedulingTypeResponse?>> GetSchedulingTypesAsync(GetProjectOperationDetailSchedulingTypeRequest request, CT ct);
+    Task<Result<GetSchedulingOperationLocationsResponse?>> GetSchedulingOperationLocationsAsync(GetSchedulingOperationLocationsRequest request, CT ct);
+    Task<Result<GetSchedulingOperationInfosResponse?>> GetSchedulingOperationInfosAsync(GetSchedulingOperationInfosRequest request, CT ct);
+    Task<Result<UpdateProjectOperationDetailDatesByDayResponse?>> UpdateProjectOperationDetailDatesByDayAsync(UpdateProjectOperationDetailDatesByDayRequest request, CT ct);
+    Task<Result<UpdateProjectOperationDetailDatesByDateResponse?>> UpdateProjectOperationDetailDatesByDateAsync(UpdateProjectOperationDetailDatesByDateRequest request, CT ct);
+}

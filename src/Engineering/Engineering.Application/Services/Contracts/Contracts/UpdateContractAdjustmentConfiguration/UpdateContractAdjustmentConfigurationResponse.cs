@@ -1,0 +1,2 @@
+namespace Engineering.Application.Services.Contracts.Contracts.UpdateContractAdjustmentConfiguration;
+public record UpdateContractAdjustmentConfigurationResponse(bool IsDone);

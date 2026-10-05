@@ -1,0 +1,5 @@
+namespace Engineering.Application.Services.ContractorStatusStatements.Models.GetContractorStatusStatementDailyServiceExcelExporter;
+
+public record GetContractorStatusStatementDailyServiceExcelExporterResponse(
+    FileContentResult File
+);

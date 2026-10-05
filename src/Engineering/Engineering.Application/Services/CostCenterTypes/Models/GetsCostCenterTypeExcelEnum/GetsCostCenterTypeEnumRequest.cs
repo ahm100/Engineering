@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.CostCenterTypes.Models.GetsCostCenterTypeExcelEnum;
+
+public record GetsCostCenterTypeExcelEnumRequest : IHttpRequest;

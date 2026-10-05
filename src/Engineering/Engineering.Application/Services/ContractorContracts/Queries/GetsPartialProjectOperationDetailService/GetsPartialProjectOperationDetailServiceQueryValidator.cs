@@ -1,0 +1,6 @@
+﻿
+namespace Engineering.Application.Services.ContractorContracts.Queries.GetsPartialProjectOperationDetailService;
+
+public class GetsPartialProjectOperationDetailServiceQueryValidator : AbstractValidator<GetsPartialProjectOperationDetailServiceQuery>
+{
+}

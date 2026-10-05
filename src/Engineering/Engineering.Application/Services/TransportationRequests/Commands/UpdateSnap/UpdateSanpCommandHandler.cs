@@ -1,0 +1,115 @@
+﻿using Engineering.Application.Abstractions.Data.Transportations;
+using Engineering.Domain.Entities.Transportations;
+using Engineering.Domain.Entities.Transportations.Enums;
+using TransportationRequest = Engineering.Domain.Entities.Transportations.TransportationRequest;
+
+namespace Engineering.Application.Services.TransportationRequests.Commands.UpdateSanp;
+
+public class UpdateSanpCommandHandler : ICommandHandler<UpdateSanpCommand, TransportationRequest>
+{
+    private readonly ILogger<UpdateSanpCommand> _logger;
+    private readonly ITransportationRequestRepository _repository;
+    private readonly ITransportationRequestCostCenterRepository _costCenterRepository;
+    private readonly ITransportationRequestProjectRepository _projectRepository;
+    private readonly ITransportationRequestProjectOperationRepository _projectOperationRepository;
+    private readonly ITransportationRequestProjectOperationDetailRepository _projectOperationDetailRepository;
+
+    public UpdateSanpCommandHandler(
+        ILogger<UpdateSanpCommand> logger,
+        ITransportationRequestRepository repository,
+        ITransportationRequestCostCenterRepository costCenterRepository,
+        ITransportationRequestProjectRepository projectRepository,
+        ITransportationRequestProjectOperationRepository projectOperationRepository,
+        ITransportationRequestProjectOperationDetailRepository projectOperationDetailRepository)
+    {
+        _logger = logger;
+        _repository = repository;
+        _costCenterRepository = costCenterRepository;
+        _projectRepository = projectRepository;
+        _projectOperationRepository = projectOperationRepository;
+        _projectOperationDetailRepository = projectOperationDetailRepository;
+    }
+
+    public async Task<Result<TransportationRequest?>> Handle(UpdateSanpCommand request, CT ct)
+    {
+        try
+        {
+            var entity = await _repository.GetById(request.Id, ct);
+            if (entity is null)
+                return Result.Failure<TransportationRequest>(TransportationRequestErrors.TransportationRequestWithIdNotFound);
+
+            entity.SetTransportation(request.Transportation);
+            entity.SetTrip(request.Trip);
+            entity.SetStartingCityIdForSnap(request.StartingCityId);
+            entity.SetDestinationCityIdForSnap(request.DestinationCityId);
+            entity.SetStartDate(request.StartDate);
+            entity.SetEndDate(request.EndDate);
+            entity.SetDescription(request.Description);
+            entity.SetDriverId(request.DriverId);
+            entity.SetDriverName(request.DriverName);
+            entity.SetPhoneNumber(request.PhoneNumber);
+            entity.SetCarSpecifications(request.CarSpecifications);
+            entity.SetNumberPlates(request.NumberPlates);
+            entity.SetCurrencyUnitId(request.CurrencyUnitId);
+            entity.SetCompanyId(request.CompanyId);
+            entity.SetTransportationCostGroup(request.TransportationCostGroup);
+            entity.SetTransportationCostCategory(request.TransportationCostCategory);
+            entity.SetSnapRequester(request.SnapRequester);
+            entity.SetSecondDestinationCityId(request.SecondDestinationCityId);
+            entity.SetPrice(request.FareAmount);
+            entity.SetStopRate(request.StopRate);
+            entity.SetDestinationAddress(request.DestinationAddress);
+            entity.SetSecondDestinationAddress(request.SecondDestinationAddress);
+            entity.SetPersonalPayment(request.PersonalPayment);
+            entity.SetStartingCityAddress(request.StartingCityAddress);
+            entity.SetReturnToStart(request.ReturnToStart);
+            entity.SetRecipientName(request.RecipientName);
+
+            if (request.IsPassenger == true)
+            {
+                entity.SetBillOfLading(null);
+                entity.SetPostageDate(null);
+                entity.SetReceivedDate(null);
+                entity.SetBillOfLadingImage(null);
+                entity.SetDelivererName(null);
+                entity.SetLoadWeight(null);
+            }
+
+            if (entity.TransportationRequestCostCenters.Count > 0)
+            {
+                foreach (var item in entity.TransportationRequestCostCenters)
+                {
+                    await _costCenterRepository.Remove(item);
+                }
+            }
+            if (entity.TransportationRequestProjects.Count > 0)
+            {
+                foreach (var item in entity.TransportationRequestProjects)
+                {
+                    await _projectRepository.Remove(item);
+                }
+            }
+
+            if (request.CostCenters is not null && request.CostCenters?.Count > 0)
+                foreach (var item in request.CostCenters)
+                    entity.AddTransportationRequestCostCenter(new TransportationRequestCostCenter(entity, item));
+
+            if (request.Projects is not null && request.Projects?.Count > 0)
+                foreach (var item in request.Projects)
+                    entity.AddTransportationRequestProject(new TransportationRequestProject(entity, item));
+
+            if (ValidateTransportationRequestStatus.AllowStatusForResend.Any(x => x == entity.TransportationRequestStatus))
+                entity.SetTransportationRequestStatus(TransportationRequestStatus.RequestResended);
+
+            entity.AddHistory();
+
+            await _repository.Update(entity);
+            return entity;
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e, e.Message);
+            return Result.Failure<TransportationRequest>(SharedErrors.UnknownError);
+        }
+    }
+}

@@ -1,0 +1,4 @@
+﻿namespace Engineering.Application.Services.EmployerStatusStatements.Models.GetEmployerStatusStatementExcelExporter;
+
+public record GetEmployerStatusStatementExcelExporterResponse(FileContentResult File);
+

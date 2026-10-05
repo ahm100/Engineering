@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+Context="SattecDbContext"
+Snapshot="$1"
+
+print_help() {
+    echo
+	echo Applies pending migrations to database.
+	echo Usage updat-database [SNAPSHOT_NAME]
+	echo
+}
+
+if [ "$Context" == "" ]; then
+   print_help;
+   exit 1;
+fi
+
+dotnet ef database update ${Snapshot} \
+   --startup-project Engineering/Engineering.Api/ \
+   --project Engineering/Engineering.Persistence/ \
+   --context "${Context}"

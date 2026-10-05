@@ -1,0 +1,6 @@
+﻿using Engineering.Domain.Entities.ProjectOperationDetails;
+
+namespace Engineering.Application.Services.ProjectOperationDetailInspections.Queries.GetProjectOperationDetailInspectionById;
+
+public record GetProjectOperationDetailInspectionByIdQuery(long ProjectOperationDetailInspectionId) : IQuery<ProjectOperationDetailInspection>;
+

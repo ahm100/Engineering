@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.ProjectOperationDetails;
+
+namespace Engineering.Application.Services.ProjectOperationDetailInspections.Commands.DeleteProjectOperationDetailInspection;
+
+public record DeleteProjectOperationDetailInspectionCommand(long ProjectOperationDetailInspectionId) : ICommand<ProjectOperationDetailInspection>;

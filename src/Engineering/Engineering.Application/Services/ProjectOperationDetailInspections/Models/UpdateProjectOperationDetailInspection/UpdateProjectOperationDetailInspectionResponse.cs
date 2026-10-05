@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectOperationDetailInspections.Models.UpdateProjectOperationDetailInspection;
+
+public record UpdateProjectOperationDetailInspectionResponse(long ProjectOperationDetailInspectionId);

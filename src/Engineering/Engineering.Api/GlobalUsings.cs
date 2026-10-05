@@ -1,0 +1,12 @@
+﻿global using Asp.Versioning;
+global using Carter;
+global using Engineering.Api.Helpers.Attributes;
+global using FluentValidation;
+global using FluentValidation.AspNetCore;
+global using Gita.Backend.Shared.Application.Shared.HttpHandlers;
+global using Gita.Backend.Shared.Domain.Base.Results;
+global using Mapster;
+global using Microsoft.AspNetCore.Authorization;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.OpenApi.Models;
+global using CT = System.Threading.CancellationToken;

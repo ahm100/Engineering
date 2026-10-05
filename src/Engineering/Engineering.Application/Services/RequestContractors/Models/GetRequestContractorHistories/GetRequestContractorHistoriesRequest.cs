@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestContractors.Models.GetRequestContractorHistories;
+
+public record GetRequestContractorHistoriesRequest(long RequestContractorId) : IHttpRequest;

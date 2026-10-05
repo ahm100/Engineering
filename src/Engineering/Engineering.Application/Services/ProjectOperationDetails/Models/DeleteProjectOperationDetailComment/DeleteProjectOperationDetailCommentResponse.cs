@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectOperationDetails.Models.DeleteProjectOperationDetailComment;
+
+public record DeleteProjectOperationDetailCommentResponse(long ProjectOperationDetailCommentId);

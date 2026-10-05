@@ -1,0 +1,3 @@
+namespace Engineering.Application.Services.ProjectWarehouses.Contracts.GetDefaultProjectWarehouse;
+
+public record GetDefaultProjectWarehouseResponse(ProjectWarehouseModel Data);

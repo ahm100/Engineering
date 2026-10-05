@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.Contracts.Contracts.UpdateContractFinancialInformation;
+
+public record UpdateContractFinancialInformationResponse(bool IsDone);

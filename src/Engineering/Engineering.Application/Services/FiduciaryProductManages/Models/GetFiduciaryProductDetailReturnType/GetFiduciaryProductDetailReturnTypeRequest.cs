@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FiduciaryProductManages.Models.GetFiduciaryProductDetailReturnType;
+
+public record GetFiduciaryProductDetailReturnTypeRequest() : IHttpRequest;

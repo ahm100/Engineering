@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestContractors.Models.GetRequestContractorInquiryById;
+
+public record GetRequestContractorInquiryByIdRequest(long RequestContractorInquiryId) : IHttpRequest;

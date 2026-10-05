@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectCostCenterRequests.Contracts.DeleteProjectCostCenterRequest;
+
+public record DeleteProjectCostCenterRequestResponse(bool IsDone);

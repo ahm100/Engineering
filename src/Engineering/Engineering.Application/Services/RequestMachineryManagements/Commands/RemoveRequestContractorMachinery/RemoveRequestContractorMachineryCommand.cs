@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.RequestMachineries;
+
+namespace Engineering.Application.Services.RequestMachineryManagements.Commands.RemoveRequestContractorMachinery;
+
+public record RemoveRequestContractorMachineryCommand(RequestMachinery RequestMachinery) : ICommand<RequestMachinery>;

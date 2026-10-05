@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectOperationDetailInspections.Models.GetProjectOperationDetailInspectionById;
+
+public record GetProjectOperationDetailInspectionByIdRequest(long Id) : IHttpRequest;

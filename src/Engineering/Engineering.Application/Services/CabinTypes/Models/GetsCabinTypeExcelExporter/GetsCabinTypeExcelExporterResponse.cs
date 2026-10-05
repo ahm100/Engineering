@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.CabinTypes.Models.GetsCabinTypeExcelExporter;
+
+public record GetsCabinTypeExcelExporterResponse(FileContentResult File);

@@ -1,0 +1,5 @@
+﻿
+
+namespace Engineering.Application.Services.RequestMachineryStatusStatements.Models.GetRequestMachineryStatusStatementStatus;
+
+public record GetRequestMachineryStatusStatementStatusRequest() : IHttpRequest;

@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestContractors.Models.UpdateRequestContractor;
+
+public record UpdateRequestContractorResponse(long RequestContractorId);

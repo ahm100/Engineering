@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.TelegramChats.Models.UserChangedTelegramMessage;
+
+public record UserChangedTelegramMessageResponse(bool IsDone);

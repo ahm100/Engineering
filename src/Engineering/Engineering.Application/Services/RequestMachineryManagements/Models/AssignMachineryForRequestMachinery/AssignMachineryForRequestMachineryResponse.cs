@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.AssignMachineryForRequestMachinery;
+
+public record AssignMachineryForRequestMachineryResponse(long RequestMachineryId);

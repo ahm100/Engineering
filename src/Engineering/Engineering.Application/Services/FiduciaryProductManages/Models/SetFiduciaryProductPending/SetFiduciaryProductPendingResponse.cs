@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FiduciaryProductManages.Models.SetFiduciaryProductPending;
+
+public record SetFiduciaryProductPendingResponse(long FiduciaryProductId);

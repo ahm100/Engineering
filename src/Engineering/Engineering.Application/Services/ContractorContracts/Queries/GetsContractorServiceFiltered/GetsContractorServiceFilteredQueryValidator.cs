@@ -1,0 +1,6 @@
+﻿
+namespace Engineering.Application.Services.ContractorContracts.Queries.GetsContractorServiceFiltered;
+
+public class GetsContractorServiceFilteredQueryValidator : AbstractValidator<GetsContractorServiceFilteredQuery>
+{
+}

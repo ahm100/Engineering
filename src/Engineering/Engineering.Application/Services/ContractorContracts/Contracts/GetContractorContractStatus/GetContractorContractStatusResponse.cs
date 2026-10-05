@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ContractorContracts.Contracts.GetContractorContractRequestStatus;
+
+public record GetContractorContractStatusResponse(List<EnumObject> Data);

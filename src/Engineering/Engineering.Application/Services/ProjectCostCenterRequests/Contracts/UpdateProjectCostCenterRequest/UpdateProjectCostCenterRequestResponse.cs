@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectCostCenterRequests.Contracts.UpdateProjectCostCenterRequest;
+
+public record UpdateProjectCostCenterRequestResponse(bool IsDone);

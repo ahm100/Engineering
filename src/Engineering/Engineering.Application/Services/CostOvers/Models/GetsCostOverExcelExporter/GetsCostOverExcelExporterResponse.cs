@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.CostOvers.Models.GetsCostOverExcelExporter;
+
+public record GetsCostOverExcelExporterResponse(FileContentResult File);

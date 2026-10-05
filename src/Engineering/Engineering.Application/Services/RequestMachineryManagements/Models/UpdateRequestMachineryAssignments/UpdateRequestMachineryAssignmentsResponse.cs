@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.UpdateRequestMachineryAssignments;
+
+public record UpdateRequestMachineryAssignmentsResponse(long RequestMachineryId, bool IsUpdated);

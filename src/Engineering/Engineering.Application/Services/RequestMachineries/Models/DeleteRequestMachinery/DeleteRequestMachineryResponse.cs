@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineries.Models.DeleteRequestMachinery;
+
+public record DeleteRequestMachineryResponse(long RequestMachineryId);

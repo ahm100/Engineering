@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineries.Models.UpdateRequestMachineryDateTime;
+
+public record UpdateRequestMachineryDateTimeResponse(long RequestMachineryId);

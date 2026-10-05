@@ -1,0 +1,7 @@
+﻿using Engineering.Domain.Entities.ContractorStatusStatements;
+
+namespace Engineering.Application.Services.ContractorStatusStatements.Commands.CreateContractorStatusStatementServiceThirdParty;
+
+public record CreateContractorStatusStatementServiceThirdPartyCommand(
+    ContractorStatusStatementServiceThirdParty Entity
+    ) : ICommand<ContractorStatusStatementServiceThirdParty>;

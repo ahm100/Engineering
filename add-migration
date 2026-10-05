@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+
+Context="SattecDbContext"
+Name="$1"
+MigrationDirectory=Migrations
+
+print_help() {
+    echo
+	echo Adds a new migration for target context
+	echo Usage add-migration MIGRATION_NAME
+	echo
+}
+
+if [ "$Name" == "" ]; then
+    print_help ;
+	exit 1;
+fi
+
+if [ "$Context" == "" ]; then
+   print_help;
+   exit 1;
+fi
+
+dotnet ef migrations add $Name \
+   --startup-project Engineering/Engineering.Api/ \
+   --project Engineering/Engineering.Persistence/ \
+   -o "${MigrationDirectory}" \
+   --context $Context
+   

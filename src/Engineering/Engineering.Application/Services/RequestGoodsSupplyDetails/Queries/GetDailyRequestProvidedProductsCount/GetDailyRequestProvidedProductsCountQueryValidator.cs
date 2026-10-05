@@ -1,0 +1,5 @@
+﻿namespace Engineering.Application.Services.RequestGoodsSupplyDetails.Queries.GetDailyRequestProvidedProductsCount;
+
+public class GetDailyRequestProvidedProductsCountQueryValidator
+{
+}

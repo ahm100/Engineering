@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FiduciaryProductManages.Models.GetFiduciaryProductDetailReturnDocumentById;
+
+public record GetFiduciaryProductDetailReturnDocumentByIdResponse(List<string> Urls, int RowCount);

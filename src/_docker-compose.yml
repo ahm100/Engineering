@@ -1,0 +1,57 @@
+version: '3.5'
+
+services:
+  sattec.services.engineering:
+    build:
+      dockerfile: Engineering/Engineering.Api/Dockerfile
+    container_name: sattec.services.Engineering
+    ports:
+      - 3080:80
+      - 3443:443
+
+    depends_on:
+      - sattec.redis-stack
+      - sattec.sqlserver
+      
+  sattec.redis-stack:
+    container_name: sattec.redis-stack
+    image: redis/redis-stack:latest
+    restart: unless-stopped
+    environment:
+      - REDIS_ARGS=--save 1200 32
+    volumes:
+      - redis_data:/data redis/redis-stack
+    ports:
+      - 16379:6379
+      - 18001:8001
+  
+  sattec.sqlserver:
+    container_name: sattec.sqlserver
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    restart: unless-stopped
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=P@ssw0rd_123
+    ports:
+      - 11433:1433
+  
+  sattec.seq:
+    container_name: sattec.seq
+    image: datalust/seq:latest
+    restart: unless-stopped
+    environment:
+      - ACCEPT_EULA=Y    
+    volumes:
+      - seq_data:/data seq/seq_data
+    ports:
+      - 15341:5431
+      - 15380:80
+
+
+volumes:
+  redis_data: { }
+  sqlserver_data: { }
+  seq_data : { }
+

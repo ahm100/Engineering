@@ -1,0 +1,8 @@
+et-ExecutionPolicy RemoteSigned -Scope CurrentUser
+press A
+========================
+.\CreateMigrationAndScript.ps1 -MigrationName "MigName"
+========================
+.\Remove-LastMigration.ps1
+========================
+Start-Process powershell -Verb RunAs -ArgumentList "-NoExit", "-Command", "cd "$PWD""

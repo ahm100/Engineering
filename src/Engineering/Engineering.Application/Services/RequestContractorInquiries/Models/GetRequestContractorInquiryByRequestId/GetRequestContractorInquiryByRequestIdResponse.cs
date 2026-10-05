@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestContractorInquiries.Models.GetRequestContractorInquiryByRequestId;
+
+public record GetRequestContractorInquiryByRequestIdResponse(List<GetRequestContractorInquiryByRequestIdModel> Data, int RowCount);

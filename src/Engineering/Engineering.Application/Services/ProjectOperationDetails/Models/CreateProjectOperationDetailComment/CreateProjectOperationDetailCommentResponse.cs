@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectOperationDetails.Models.CreateProjectOperationDetailComment;
+
+public record CreateProjectOperationDetailCommentResponse(long ProjectOperationDetailCommentId);

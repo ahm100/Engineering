@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.EmployerStatusStatements.Models.GetsEmployerStatusStatementProjectOperationExcelEnum;
+
+public record GetsEmployerStatusStatementProjectOperationExcelEnumsRequest() : IHttpRequest;

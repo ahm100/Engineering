@@ -1,0 +1,5 @@
+﻿namespace Engineering.Application.Services.ProjectOperationDetails.Queries.GetProjectOperationDetailContractors;
+
+public class GetProjectOperationDetailContractorsQueryValidator
+{
+}

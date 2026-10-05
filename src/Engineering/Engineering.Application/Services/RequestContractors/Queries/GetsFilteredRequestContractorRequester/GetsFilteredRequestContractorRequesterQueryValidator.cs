@@ -1,0 +1,5 @@
+﻿namespace Engineering.Application.Services.RequestContractors.Queries.GetsFilteredRequestContractorRequester;
+
+public class GetsFilteredRequestContractorRequesterQueryValidator
+{
+}

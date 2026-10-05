@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.BillOfLadings.Contracts.BillOfLadingCodeCreator;
+
+public record BillOfLadingCodeCreatorRequest : IHttpRequest;

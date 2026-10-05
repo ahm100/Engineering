@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.BillOfLadings.Contracts.GetsBillOfLadingExcelEnum;
+
+public record GetsBillOfLadingExcelEnumRequest : IHttpRequest;

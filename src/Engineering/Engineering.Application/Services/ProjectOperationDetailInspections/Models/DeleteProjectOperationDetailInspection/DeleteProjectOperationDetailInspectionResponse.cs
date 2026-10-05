@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectOperationDetailInspections.Models.DeleteProjectOperationDetailInspection;
+
+public record DeleteProjectOperationDetailInspectionResponse(long ProjectOperationDetailInspectionId);

@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryOperatorAppointment;
+
+public record SetRequestMachineryOperatorAppointmentResponse(long RequestMachineryId);

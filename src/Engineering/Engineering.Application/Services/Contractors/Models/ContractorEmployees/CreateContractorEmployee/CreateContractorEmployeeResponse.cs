@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.Contractors.Models.ContractorEmployees.CreateContractorEmployee;
+
+public record CreateContractorEmployeeResponse(bool IsCreated);

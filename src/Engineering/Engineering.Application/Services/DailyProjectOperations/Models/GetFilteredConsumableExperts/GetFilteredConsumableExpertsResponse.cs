@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.DailyProjectOperations.Models.GetFilteredConsumableExperts;
+
+public record GetFilteredConsumableExpertsResponse(List<GetFilteredConsumableExpertsModel> Data, int RowCount);

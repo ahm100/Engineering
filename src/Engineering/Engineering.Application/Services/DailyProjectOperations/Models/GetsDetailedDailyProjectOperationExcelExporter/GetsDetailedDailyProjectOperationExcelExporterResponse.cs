@@ -1,0 +1,4 @@
+﻿namespace Engineering.Application.Services.DailyProjectOperations.Models.GetsDetailedDailyProjectOperationExcelExporter;
+
+public record GetsDetailedDailyProjectOperationExcelExporterResponse(FileContentResult File);
+

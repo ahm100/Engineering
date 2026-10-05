@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.FiduciaryProducts;
+
+namespace Engineering.Application.Services.FiduciaryProductManages.Commands.DeleteFiduciaryProductDetailReturn;
+
+public record DeleteFiduciaryProductDetailReturnCommand(long FiduciaryProductDetailReturnId) : ICommand<FiduciaryProductDetailReturn>;

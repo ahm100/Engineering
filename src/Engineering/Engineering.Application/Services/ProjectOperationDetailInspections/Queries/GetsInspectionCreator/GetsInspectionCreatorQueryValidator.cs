@@ -1,0 +1,5 @@
+﻿namespace Engineering.Application.Services.ProjectOperationDetailInspections.Queries.GetsInspectionCreator;
+
+public class GetsInspectionCreatorQueryValidator
+{
+}

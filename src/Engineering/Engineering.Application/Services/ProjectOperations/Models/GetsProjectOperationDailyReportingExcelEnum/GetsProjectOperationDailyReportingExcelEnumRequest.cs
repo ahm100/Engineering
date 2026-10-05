@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectOperations.Models.GetsProjectOperationDailyReportingExcelEnum;
+
+public record GetsProjectOperationDailyReportingExcelEnumRequest : IHttpRequest;

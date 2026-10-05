@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.Categories.Models.GetsCategoryExcelExporter;
+
+public record GetsCategoryExcelExporterResponse(FileContentResult File);

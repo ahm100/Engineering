@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.TelegramChats.Models.CommercialPaymentTelegramMessage;
+
+public record CommercialPaymentTelegramMessageResponse(bool IsDone);

@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachinerySendToManager;
+
+public record SetRequestMachinerySendToManagerResponse(List<long> RequestMachineryIds, bool UpdateState);

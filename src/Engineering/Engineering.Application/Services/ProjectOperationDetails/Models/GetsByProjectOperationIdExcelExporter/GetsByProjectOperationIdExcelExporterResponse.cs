@@ -1,0 +1,4 @@
+﻿namespace Engineering.Application.Services.ProjectOperationDetails.Models.GetsByProjectOperationIdExcelExporter;
+
+public record GetsByProjectOperationIdExcelExporterResponse(FileContentResult File);
+

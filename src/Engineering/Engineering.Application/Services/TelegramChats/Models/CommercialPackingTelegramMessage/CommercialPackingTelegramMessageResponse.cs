@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.TelegramChats.Models.CommercialPackingTelegramMessage;
+
+public record CommercialPackingTelegramMessageResponse(bool IsDone);

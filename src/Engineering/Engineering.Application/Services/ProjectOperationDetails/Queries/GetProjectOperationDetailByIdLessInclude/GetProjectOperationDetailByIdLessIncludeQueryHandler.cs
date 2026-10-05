@@ -1,0 +1,30 @@
+﻿using Engineering.Application.Abstractions.Data.ProjectOperationDetails;
+using ProjectOperationDetail = Engineering.Domain.Entities.ProjectOperationDetails.ProjectOperationDetail;
+
+namespace Engineering.Application.Services.ProjectOperationDetails.Queries.GetProjectOperationDetailByIdLessInclude;
+
+public class GetProjectOperationDetailByIdLessIncludeQueryHandler : IQueryHandler<GetProjectOperationDetailByIdLessIncludeQuery, ProjectOperationDetail>
+{
+    private readonly ILogger<GetProjectOperationDetailByIdLessIncludeQueryHandler> _logger;
+    private readonly IProjectOperationDetailRepository _repository;
+
+    public GetProjectOperationDetailByIdLessIncludeQueryHandler(ILogger<GetProjectOperationDetailByIdLessIncludeQueryHandler> logger, IProjectOperationDetailRepository repository)
+    {
+        _logger = logger;
+        _repository = repository;
+    }
+
+    public async Task<Result<ProjectOperationDetail?>> Handle(GetProjectOperationDetailByIdLessIncludeQuery request, CT ct)
+    {
+        try
+        {
+            var result = await _repository.GetProjectOperationDetailByIdLessInclude(request.Id, ct);
+            return result ?? Result.Failure<ProjectOperationDetail>(ProjectOperationDetailErrors.ProjectOperationDetailWithIdNotFound);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, ex.Message);
+            return Result.Failure<ProjectOperationDetail>(SharedErrors.UnknownError);
+        }
+    }
+}

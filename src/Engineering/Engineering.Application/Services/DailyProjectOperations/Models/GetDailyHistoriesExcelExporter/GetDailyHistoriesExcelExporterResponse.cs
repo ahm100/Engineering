@@ -1,0 +1,4 @@
+﻿namespace Engineering.Application.Services.DailyProjectOperations.Models.GetDailyHistoriesExcelExporter;
+
+public record GetDailyHistoriesExcelExporterResponse(FileContentResult File);
+

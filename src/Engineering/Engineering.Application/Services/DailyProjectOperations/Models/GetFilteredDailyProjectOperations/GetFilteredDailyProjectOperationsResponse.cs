@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.DailyProjectOperations.Models.GetFilteredDailyProjectOperations;
+
+public record GetFilteredDailyProjectOperationsResponse(List<GetDailyProjectOperationModel> Data, int RowCount);

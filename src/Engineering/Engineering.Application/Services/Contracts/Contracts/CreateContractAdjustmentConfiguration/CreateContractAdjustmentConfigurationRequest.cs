@@ -1,0 +1,6 @@
+using Engineering.Application.Services.Contracts.Contracts.ContractAdjustmentConfigurations;
+using Engineering.Application.Services.Contracts.Contracts.ContractTypeDetails;
+using Engineering.Domain.Entities.Contracts.Enums;
+
+namespace Engineering.Application.Services.Contracts.Contracts.CreateContractAdjustmentConfiguration;
+public record CreateContractAdjustmentConfigurationRequest(long ContractId, ContractAdjustmentMethod Method, ContractAdjustmentScopeRequest Scope, ContractTypeDetailAdjustmentRequest Adjustment) : IHttpRequest;

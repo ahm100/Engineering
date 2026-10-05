@@ -1,0 +1,6 @@
+﻿
+namespace Engineering.Application.Services.ContractorContracts.Queries.GetsIntegratedProjectOperationDetailService;
+
+public class GetsIntegratedProjectOperationDetailServiceQueryValidator : AbstractValidator<GetsIntegratedProjectOperationDetailServiceQuery>
+{
+}

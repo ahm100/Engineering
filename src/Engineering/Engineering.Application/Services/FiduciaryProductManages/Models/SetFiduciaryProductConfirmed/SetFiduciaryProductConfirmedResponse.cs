@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FiduciaryProductManages.Models.SetFiduciaryProductConfirmed;
+
+public record SetFiduciaryProductConfirmedResponse(long FiduciaryProductId);

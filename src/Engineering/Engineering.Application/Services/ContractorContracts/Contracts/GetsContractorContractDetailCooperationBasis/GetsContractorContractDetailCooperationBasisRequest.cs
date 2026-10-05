@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ContractorContracts.Contracts.GetsContractorContractDetailCooperationBasis;
+
+public record GetsContractorContractDetailCooperationBasisRequest() : IHttpRequest;

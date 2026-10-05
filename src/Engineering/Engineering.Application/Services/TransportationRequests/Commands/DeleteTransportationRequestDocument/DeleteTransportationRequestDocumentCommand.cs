@@ -1,0 +1,6 @@
+﻿
+using Engineering.Domain.Entities.Transportations;
+
+namespace Engineering.Application.Services.TransportationRequests.Commands.DeleteTransportationRequestDocument;
+
+public record DeleteTransportationRequestDocumentCommand(long TransportationRequestDocumentId) : ICommand<TransportationRequestDocument>;

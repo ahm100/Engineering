@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.TelegramChats.Models.CommerceRequestWarehouseStatusChangeTelegramMessage;
+
+public record CommerceRequestWarehouseStatusChangeTelegramMessageResponse(bool IsDone);

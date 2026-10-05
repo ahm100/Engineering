@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.CostCenterVirtualGroups.Models.CreateCostCenterVirtualGroup;
+
+public record CreateCostCenterVirtualGroupResponse(long CostCenterVirtualGroupId);

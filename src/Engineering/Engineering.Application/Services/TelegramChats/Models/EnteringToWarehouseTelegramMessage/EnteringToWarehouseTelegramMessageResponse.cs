@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.TelegramChats.Models.EnteringToWarehouseTelegramMessage;
+
+public record EnteringToWarehouseTelegramMessageResponse(bool IsDone);

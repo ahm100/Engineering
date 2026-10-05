@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineries.Models.GetManagerConfirmMachineryReports;
+
+public record GetManagerConfirmMachineryReportsResponse(List<GetManagerConfirmMachineryReportsModel> Data, int RowCount);

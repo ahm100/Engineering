@@ -1,0 +1,5 @@
+﻿namespace Engineering.Application.Services.EmployerStatusStatements.Queries.GetsFilteredRequester;
+
+public class GetsFilteredEmployerRequesterQueryValidator
+{
+}

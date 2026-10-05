@@ -1,0 +1,7 @@
+﻿using Engineering.Domain.Entities.EmployerStatusStatements;
+
+namespace Engineering.Application.Services.EmployerStatusStatements.Commands.CreateEmployerStatusStatementProjectOperation;
+
+public record CreateEmployerStatusStatementProjectOperationCommand(
+    EmployerStatusStatementProjectOperation EmployerStatusStatementProjectOperation
+    ) : ICommand<EmployerStatusStatementProjectOperation>;

@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FiduciaryProductManages.Models.CreateFiduciaryProductDetailReturn;
+
+public record CreateFiduciaryProductDetailReturnRequest(List<CreateFiduciaryProductDetailReturnModelRequest> Data) : IHttpRequest;

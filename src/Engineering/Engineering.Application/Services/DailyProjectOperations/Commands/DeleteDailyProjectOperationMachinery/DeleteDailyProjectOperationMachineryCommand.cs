@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.DailyProjectOperations;
+
+namespace Engineering.Application.Services.DailyProjectOperations.Commands.DeleteDailyProjectOperationMachinery;
+
+public record DeleteDailyProjectOperationMachineryCommand(long DailyProjectOperationMachineryId) : ICommand<DailyProjectOperationMachinery>;

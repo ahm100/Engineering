@@ -1,0 +1,4 @@
+﻿namespace Engineering.Application.Services.RequestRewards.Contracts.GetFilteredRequestRewardsExcelExporter;
+
+public record GetFilteredRequestRewardsExcelExporterResponse(FileContentResult File);
+

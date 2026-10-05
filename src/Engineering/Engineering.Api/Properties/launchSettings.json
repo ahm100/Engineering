@@ -1,0 +1,71 @@
+{
+  "profiles": {
+    "HiveTest": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger/engineering",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5560"
+    },
+    "SattecMaster": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger/engineering",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "SattecMaster"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5560"
+    },
+    //"ProductionKG": {
+    //  "commandName": "Project",
+    //  "launchBrowser": true,
+    //  "launchUrl": "swagger/engineering",
+    //  "environmentVariables": {
+    //    "ASPNETCORE_ENVIRONMENT": "ProductionKG"
+    //  },
+    //  "dotnetRunMessages": true,
+    //  "applicationUrl": "http://localhost:5560"
+    //},
+    "SattecRelease": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger/engineering",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "SattecRelease"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5560"
+    },
+    "https": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "https://localhost:7152/swagger/engineering/index.html",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7152;http://localhost:5560"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger/engineering",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:33163",
+      "sslPort": 44334
+    }
+  }
+}

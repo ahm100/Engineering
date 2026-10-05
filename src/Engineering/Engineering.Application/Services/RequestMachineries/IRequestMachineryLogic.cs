@@ -1,0 +1,73 @@
+﻿using Engineering.Application.Services.RequestMachineries.Models.CreateRequestMachinery;
+using Engineering.Application.Services.RequestMachineries.Models.CreateRequestMachineryBillDocument;
+using Engineering.Application.Services.RequestMachineries.Models.CreateRequestMachineryDocument;
+using Engineering.Application.Services.RequestMachineries.Models.DeleteRequestMachinery;
+using Engineering.Application.Services.RequestMachineries.Models.GetFilteredRequestMachineries;
+using Engineering.Application.Services.RequestMachineries.Models.GetManagerConfirmMachineryReports;
+using Engineering.Application.Services.RequestMachineries.Models.GetOnProjectMachineryReports;
+using Engineering.Application.Services.RequestMachineries.Models.GetOnProjectMachineryReportsExcelEnums;
+using Engineering.Application.Services.RequestMachineries.Models.GetOnProjectMachineryReportsExcelExporter;
+using Engineering.Application.Services.RequestMachineries.Models.GetOnProjectRequestReports;
+using Engineering.Application.Services.RequestMachineries.Models.GetOnProjectRequestReportsExcelEnums;
+using Engineering.Application.Services.RequestMachineries.Models.GetOnProjectRequestReportsExcelExporter;
+using Engineering.Application.Services.RequestMachineries.Models.GetRequestMachineryById;
+using Engineering.Application.Services.RequestMachineries.Models.GetRequestMachineryHistories;
+using Engineering.Application.Services.RequestMachineries.Models.GetRequestMachineryMachineries;
+using Engineering.Application.Services.RequestMachineries.Models.GetRequestMachineryProjectOperation;
+using Engineering.Application.Services.RequestMachineries.Models.GetRequestMachineryProjectOperationDetail;
+using Engineering.Application.Services.RequestMachineries.Models.GetRequestMachineryStatus;
+using Engineering.Application.Services.RequestMachineries.Models.GetRequestMachineryUnits;
+using Engineering.Application.Services.RequestMachineries.Models.GetSendManagerMachineryReports;
+using Engineering.Application.Services.RequestMachineries.Models.GetsMachineryRequesteExcelExporter;
+using Engineering.Application.Services.RequestMachineries.Models.GetsRequestMachineryExcelEnums;
+using Engineering.Application.Services.RequestMachineries.Models.GetsRequestMachineryProjectOperationDetail;
+using Engineering.Application.Services.RequestMachineries.Models.GetTotalManagerConfirmMachineryReports;
+using Engineering.Application.Services.RequestMachineries.Models.GetTotalOnProjectMachineryReports;
+using Engineering.Application.Services.RequestMachineries.Models.GetTotalOnProjectRequestReports;
+using Engineering.Application.Services.RequestMachineries.Models.GetTotalSendManagerMachineryReports;
+using Engineering.Application.Services.RequestMachineries.Models.GroupRequestMachineryStatusChanger;
+using Engineering.Application.Services.RequestMachineries.Models.RequestMachineryGroupDelete;
+using Engineering.Application.Services.RequestMachineries.Models.UpdateRequestMachinery;
+using Engineering.Application.Services.RequestMachineries.Models.UpdateRequestMachineryDateTime;
+using Engineering.Application.Services.RequestMachineries.Models.UpdateRequestMachineryDriver;
+using Engineering.Application.Services.RequestMachineries.Models.UpdateRequestMachineryMachinery;
+
+namespace Engineering.Application.Services.RequestMachineries;
+
+public partial interface IRequestMachineryLogic
+{
+    Task<Result<CreateRequestMachineryResponse?>> CreateRequestMachineryAsync(CreateRequestMachineryRequest request, CT ct);
+    Task<Result<CreateRequestMachineryBillDocumentResponse?>> CreateRequestMachineryBillDocument(CreateRequestMachineryBillDocumentRequest request, CT ct);
+    Task<Result<CreateRequestMachineryDocumentResponse?>> CreateRequestMachineryDocument(CreateRequestMachineryDocumentRequest request, CT ct);
+    Task<Result<DeleteRequestMachineryResponse?>> DeleteRequestMachineryAsync(DeleteRequestMachineryRequest request, CT ct);
+    Task<Result<UpdateRequestMachineryMachineryResponse?>> UpdateRequestMachineryMachineryAsync(UpdateRequestMachineryMachineryRequest request, CT ct);
+    Task<Result<UpdateRequestMachineryDateTimeResponse?>> UpdateRequestMachineryDateTime(UpdateRequestMachineryDateTimeRequest request, CT ct);
+    Task<Result<UpdateRequestMachineryDriverResponse?>> UpdateRequestMachineryDriverAsync(UpdateRequestMachineryDriverRequest request, CT ct);
+    Task<Result<UpdateRequestMachineryResponse?>> UpdateRequestMachineryAsync(UpdateRequestMachineryRequest request, CT ct);
+    Task<Result<RequestMachineryGroupDeleteResponse?>> RequestMachineryGroupDelete(RequestMachineryGroupDeleteRequest request, CT ct);
+    Task<Result<GroupRequestMachineryStatusChangerResponse?>> GroupRequestMachineryStatusChanger(GroupRequestMachineryStatusChangerRequest request, CT ct);
+
+    Task<Result<GetRequestMachineryMachineriesResponse?>> GetRequestMachineryMachineries(GetRequestMachineryMachineriesRequest request, CT ct);
+    Task<Result<GetRequestMachineryStatusResponse?>> GetRequestMachineryStatusAsync(GetRequestMachineryStatusRequest request, CT ct);
+    Task<Result<GetRequestMachineryUnitsResponse?>> GetRequestMachineryUnitsAsync(GetRequestMachineryUnitsRequest request, CT ct);
+    Task<Result<GetRequestMachineryProjectOperationResponse?>> GetRequestMachineryProjectOperationAsync(GetRequestMachineryProjectOperationRequest request, CT ct);
+    Task<Result<GetRequestMachineryProjectOperationDetailResponse?>> GetRequestMachineryProjectOperationDetailAsync(GetRequestMachineryProjectOperationDetailRequest request, CT ct);
+    Task<Result<GetsRequestMachineryProjectOperationDetailResponse?>> GetsRequestMachineryProjectOperationDetail(GetsRequestMachineryProjectOperationDetailRequest request, CT ct);
+    Task<Result<GetsMachineryRequesteExcelExporterResponse?>> GetsMachineryRequesteExcelExporter(GetsMachineryRequesteExcelExporterRequest request, CT ct);
+    Task<Result<GetsRequestMachineryExcelEnumsResponse?>> GetsRequestMachineryExcelEnums(GetsRequestMachineryExcelEnumsRequest request, CT ct);
+    Task<Result<GetManagerConfirmMachineryReportsResponse?>> GetManagerConfirmMachineryReports(GetManagerConfirmMachineryReportsRequest request, CT ct);
+    Task<Result<GetSendManagerMachineryReportsResponse?>> GetSendManagerMachineryReports(GetSendManagerMachineryReportsRequest request, CT ct);
+    Task<Result<GetTotalSendManagerMachineryReportsResponse?>> GetTotalSendManagerMachineryReports(GetTotalSendManagerMachineryReportsRequest request, CT ct);
+    Task<Result<GetOnProjectMachineryReportsResponse?>> GetOnProjectMachineryReports(GetOnProjectMachineryReportsRequest request, CT ct);
+    Task<Result<GetOnProjectMachineryReportsExcelExporterResponse?>> GetOnProjectMachineryReportsExcelExporter(GetOnProjectMachineryReportsExcelExporterRequest request, CT ct);
+    Task<Result<GetOnProjectMachineryReportsExcelEnumsResponse?>> GetOnProjectMachineryReportsExcelEnums(GetOnProjectMachineryReportsExcelEnumsRequest request, CT ct);
+    Task<Result<GetTotalOnProjectMachineryReportsResponse?>> GetTotalOnProjectMachineryReports(GetTotalOnProjectMachineryReportsRequest request, CT ct);
+    Task<Result<GetTotalManagerConfirmMachineryReportsResponse?>> GetTotalManagerConfirmMachineryReports(GetTotalManagerConfirmMachineryReportsRequest request, CT ct);
+    Task<Result<GetOnProjectRequestReportsResponse?>> GetOnProjectRequestReports(GetOnProjectRequestReportsRequest request, CT ct);
+    Task<Result<GetOnProjectRequestReportsExcelExporterResponse?>> GetOnProjectRequestReportsExcelExporter(GetOnProjectRequestReportsExcelExporterRequest request, CT ct);
+    Task<Result<GetOnProjectRequestReportsExcelEnumsResponse?>> GetOnProjectRequestReportsExcelEnums(GetOnProjectRequestReportsExcelEnumsRequest request, CT ct);
+    Task<Result<GetTotalOnProjectRequestReportsResponse?>> GetTotalOnProjectRequestReports(GetTotalOnProjectRequestReportsRequest request, CT ct);
+    Task<Result<GetFilteredRequestMachineriesResponse?>> GetFilteredRequestMachineriesAsync(GetFilteredRequestMachineriesRequest request, CT ct);
+    Task<Result<GetRequestMachineryHistoriesResponse?>> GetRequestMachineryHistoriesAsync(GetRequestMachineryHistoriesRequest request, CT ct);
+    Task<Result<GetRequestMachineryByIdResponse?>> GetRequestMachineryByIdAsync(GetRequestMachineryByIdRequest request, CT ct);
+}

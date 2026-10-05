@@ -1,0 +1,40 @@
+﻿using Engineering.Application.RequestGoodsSupplyManagements.Models.GetFilteredAlternativeProducts;
+using Engineering.Application.RequestGoodsSupplyManagements.Models.GetFilteredManagementRequestGoodsSupplies;
+using Engineering.Application.RequestGoodsSupplyManagements.Models.GetsDestinationWarehouse;
+using Engineering.Application.RequestGoodsSupplyManagements.Models.GetsManagementGoodsSupplyForWarehouse;
+using Engineering.Application.RequestGoodsSupplyManagements.Models.GetsSourceWarehouse;
+using Engineering.Application.RequestGoodsSupplyManagements.Models.UpdateRequestGoodsSupplyManagement;
+using Engineering.Application.RequestGoodsSupplyManagements.Models.UpdateRequestGoodsSupplyManagements;
+using Engineering.Application.Services.RequestGoodsSupplyManagements.Models.GetRequestGoodsManagementHistoryById;
+using Engineering.Application.Services.RequestGoodsSupplyManagements.Models.GetRequestGoodsSupplyProducts;
+using Engineering.Application.Services.RequestGoodsSupplyManagements.Models.GetsGoodsSupplyManagmentBySupplyProductId;
+using Engineering.Application.Services.RequestGoodsSupplyManagements.Models.GetsProjectManagerRequestGoodsSupplie;
+using Engineering.Application.Services.RequestGoodsSupplyManagements.Models.GetsRequestGoodsSupplyManagementStatus;
+using Engineering.Application.Services.RequestGoodsSupplyManagements.Models.GetsRequestGoodsSupplyManagementType;
+using Engineering.Application.Services.RequestGoodsSupplyManagements.Models.GetsSupplyManagementExcelEnums;
+using Engineering.Application.Services.RequestGoodsSupplyManagements.Models.GetsSupplyManagementExcelExporter;
+using Engineering.Application.Services.RequestGoodsSupplyManagements.Models.SetConfirmedGoodsSupplyProduct;
+
+namespace Engineering.Application.RequestGoodsSupplyDetailManagements;
+
+public interface IRequestGoodsSupplyManagementLogic
+{
+    Task<Result<UpdateRequestGoodsSupplyManagementResponse?>> UpdateRequestGoodsSupplyManagement(UpdateRequestGoodsSupplyManagementRequest request, CT ct);
+    Task<Result<UpdateRequestGoodsSupplyManagementsResponse?>> UpdateRequestGoodsSupplyManagements(UpdateRequestGoodsSupplyManagementsRequest request, CT ct);
+    Task<Result<SetConfirmedGoodsSupplyProductResponse?>> SetConfirmedGoodsSupplyProduct(SetConfirmedGoodsSupplyProductModelRequest request, CT ct);
+
+    Task<Result<GetFilteredManagementRequestGoodsSuppliesResponse?>> GetFilteredRequestGoodsSupplyManagements(GetFilteredManagementRequestGoodsSuppliesRequest request, CT ct);
+    Task<Result<GetsProjectManagerRequestGoodsSupplieResponse?>> GetsProjectManagerRequestGoodsSupplie(GetsProjectManagerRequestGoodsSupplieRequest request, CT ct);
+    Task<Result<GetFilteredAlternativeProductsResponse?>> GetFilteredAlternativeProductsRequestAsync(GetFilteredAlternativeProductsRequest request, CT ct);
+    Task<Result<GetsSourceWarehouseResponse?>> GetsSourceWarehouse(GetsSourceWarehouseRequest request, CT ct);
+    Task<Result<GetsDestinationWarehouseResponse?>> GetsDestinationWarehouse(GetsDestinationWarehouseRequest request, CT ct);
+    Task<Result<GetRequestGoodsSupplyProductResponse?>> GetRequestGoodsSupplyProduct(GetRequestGoodsSupplyProductRequest request, CT ct);
+    Task<Result<GetsManagementGoodsSupplyForWarehouseResponse?>> GetsManagementGoodsSupplyForWarehouse(GetsManagementGoodsSupplyForWarehouseRequest request, CT ct);
+    Task<Result<GetsSupplyManagementExcelExporterResponse?>> GetsSupplyManagementExcelExporter(GetsSupplyManagementExcelExporterRequest request, CT ct);
+    Task<Result<GetsSupplyManagementExcelEnumsResponse?>> GetsSupplyManagementExcelEnums(GetsSupplyManagementExcelEnumsRequest request, CT ct);
+    Task<Result<GetsRequestGoodsSupplyManagementTypeResponse?>> GetsRequestGoodsSupplyManagementType(GetsRequestGoodsSupplyManagementTypeRequest request, CT ct);
+    Task<Result<GetsRequestGoodsSupplyManagementStatusResponse?>> GetsRequestGoodsSupplyManagementStatus(GetsRequestGoodsSupplyManagementStatusRequest request, CT ct);
+    Task<Result<GetRequestGoodsManagementHistoryByIdResponse?>> GetRequestGoodsManagementHistoryById(GetRequestGoodsManagementHistoryByIdRequest request, CT ct);
+    Task<Result<GetsGoodsSupplyManagmentBySupplyProductIdResponse?>> GetsGoodsSupplyManagmentBySupplyProductId(GetsGoodsSupplyManagmentBySupplyProductIdRequest request, CT ct);
+
+}

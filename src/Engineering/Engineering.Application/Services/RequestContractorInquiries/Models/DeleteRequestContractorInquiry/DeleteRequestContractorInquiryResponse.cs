@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestContractors.Models.DeleteRequestContractorInquiry;
+
+public record DeleteRequestContractorInquiryResponse(long RequestContractorInquiryId, bool IsDeleted);

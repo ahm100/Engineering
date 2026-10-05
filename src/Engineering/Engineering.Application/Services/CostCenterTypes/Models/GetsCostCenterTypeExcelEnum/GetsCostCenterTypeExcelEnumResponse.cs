@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.CostCenterTypes.Models.GetsCostCenterTypeExcelEnum;
+
+public record GetsCostCenterTypeExcelEnumResponse(List<EnumObject> Data);

@@ -1,0 +1,5 @@
+﻿namespace Engineering.Application.Services.DailyProjectOperations.Queries.GetsDailyOperationCreatedByProjectReport;
+
+public class GetsDailyOperationCreatedByProjectReportQueryValidator
+{
+}

@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.DailyProjectOperations;
+
+namespace Engineering.Application.Services.DailyProjectOperations.Commands.DeleteDailyProjectOperationDocument;
+
+public record DeleteDailyProjectOperationDocumentCommand(long DailyProjectOperationDocumentId) : ICommand<DailyProjectOperationDocument>;

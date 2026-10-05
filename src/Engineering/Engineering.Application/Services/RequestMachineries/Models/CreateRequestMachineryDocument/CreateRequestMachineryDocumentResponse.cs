@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineries.Models.CreateRequestMachineryDocument;
+
+public record CreateRequestMachineryDocumentResponse(long RequestMachineryId);

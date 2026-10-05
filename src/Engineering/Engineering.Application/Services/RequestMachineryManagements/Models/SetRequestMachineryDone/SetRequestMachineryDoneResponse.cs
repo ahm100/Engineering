@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryDone;
+
+public record SetRequestMachineryDoneResponse(long RequestMachineryId);

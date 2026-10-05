@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.RequestMachineries;
+
+namespace Engineering.Application.Services.RequestMachineryManagements.Commands.DeleteRequestMachineryInquiryOperator;
+
+public record DeleteRequestMachineryInquiryOperatorCommand(long RequestMachineryInquiryOperatorId) : ICommand<RequestMachineryInquiryOperator>;

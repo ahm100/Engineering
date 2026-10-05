@@ -1,0 +1,5 @@
+﻿
+namespace Engineering.Application.Services.ContractorStatusStatements.Models.ContractorStatusStatementCodeCreator;
+
+public record ContractorStatusStatementCodeCreatorRequest(
+    ) : IHttpRequest;

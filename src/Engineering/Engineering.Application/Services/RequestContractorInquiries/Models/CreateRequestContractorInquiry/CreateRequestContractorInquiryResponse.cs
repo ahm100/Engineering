@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestContractorInquiries.Models.CreateRequestContractorInquiry;
+
+public record CreateRequestContractorInquiryResponse(long RequestContractorId, bool IsCreated);

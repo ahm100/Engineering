@@ -1,0 +1,85 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Services\Account\**" />
+		<Compile Remove="Services\BillOfLadings\Contracts\Models\**" />
+		<Compile Remove="Services\ConsumableVolumes\Models\ModelValidator\**" />
+		<Compile Remove="Services\ContractorStatusStatements\Contracts\GetContractorStatusStatementDailyExcelServiceEnum\**" />
+		<Compile Remove="Services\ContractorStatusStatements\Contracts\GetsContractorStatusStatementDailyExcelExporter\**" />
+		<Compile Remove="Services\DailyProjectOperations\Queries\GetDailyProjectOperationByDate\**" />
+		<Compile Remove="Services\MachineTypes\Models\Models\**" />
+		<Compile Remove="Services\ProjectOperationDetailContractorServices\Models\ContractorServiceModels\**" />
+		<Compile Remove="Services\ProjectOperationDetailSchedulings\Commands\**" />
+		<Compile Remove="Services\TransportationRequests\Models\Models\**" />
+		<Compile Remove="Services\Transportations\Models\Models\**" />
+		<Compile Remove="Services\Trips\Models\Models\**" />
+		<Compile Remove="WebServices\Telegrams\**" />
+		<Compile Remove="WebServices\WarehouseServices\Products\Commands\**" />
+		<EmbeddedResource Remove="Services\Account\**" />
+		<EmbeddedResource Remove="Services\BillOfLadings\Contracts\Models\**" />
+		<EmbeddedResource Remove="Services\ConsumableVolumes\Models\ModelValidator\**" />
+		<EmbeddedResource Remove="Services\ContractorStatusStatements\Contracts\GetContractorStatusStatementDailyExcelServiceEnum\**" />
+		<EmbeddedResource Remove="Services\ContractorStatusStatements\Contracts\GetsContractorStatusStatementDailyExcelExporter\**" />
+		<EmbeddedResource Remove="Services\DailyProjectOperations\Queries\GetDailyProjectOperationByDate\**" />
+		<EmbeddedResource Remove="Services\MachineTypes\Models\Models\**" />
+		<EmbeddedResource Remove="Services\ProjectOperationDetailContractorServices\Models\ContractorServiceModels\**" />
+		<EmbeddedResource Remove="Services\ProjectOperationDetailSchedulings\Commands\**" />
+		<EmbeddedResource Remove="Services\TransportationRequests\Models\Models\**" />
+		<EmbeddedResource Remove="Services\Transportations\Models\Models\**" />
+		<EmbeddedResource Remove="Services\Trips\Models\Models\**" />
+		<EmbeddedResource Remove="WebServices\Telegrams\**" />
+		<EmbeddedResource Remove="WebServices\WarehouseServices\Products\Commands\**" />
+		<None Remove="Services\Account\**" />
+		<None Remove="Services\BillOfLadings\Contracts\Models\**" />
+		<None Remove="Services\ConsumableVolumes\Models\ModelValidator\**" />
+		<None Remove="Services\ContractorStatusStatements\Contracts\GetContractorStatusStatementDailyExcelServiceEnum\**" />
+		<None Remove="Services\ContractorStatusStatements\Contracts\GetsContractorStatusStatementDailyExcelExporter\**" />
+		<None Remove="Services\DailyProjectOperations\Queries\GetDailyProjectOperationByDate\**" />
+		<None Remove="Services\MachineTypes\Models\Models\**" />
+		<None Remove="Services\ProjectOperationDetailContractorServices\Models\ContractorServiceModels\**" />
+		<None Remove="Services\ProjectOperationDetailSchedulings\Commands\**" />
+		<None Remove="Services\TransportationRequests\Models\Models\**" />
+		<None Remove="Services\Transportations\Models\Models\**" />
+		<None Remove="Services\Trips\Models\Models\**" />
+		<None Remove="WebServices\Telegrams\**" />
+		<None Remove="WebServices\WarehouseServices\Products\Commands\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Engineering.Domain\Engineering.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Abstractions\Data\ContractorEmployees\" />
+		<Folder Include="Extensions\Importers\" />
+		<Folder Include="Services\ProjectWbses\Queries\NewFolder\" />
+		<Folder Include="WebServices\MetaDataServices\Currencies\Queries\GetsCurrencyFiltered\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Aspose.Tasks" Version="26.8.0" />
+		<PackageReference Include="ClosedXML" Version="0.104.2" />
+		<PackageReference Include="DistributedLock.Redis" Version="1.0.3" />
+		<PackageReference Include="MimeTypes" Version="2.5.2">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Polly.Core" Version="8.6.6" />
+		<PackageReference Include="Polly.Extensions" Version="8.6.6" />
+		<PackageReference Include="Refit" Version="8.0.0" />
+		<PackageReference Include="Gita.Backend.Shared.Application" Version="2.2.244" />
+		<PackageReference Include="Gita.Backend.Shared.Domain" Version="2.2.252" />
+		<PackageReference Include="System.Linq.Dynamic.Core" Version="1.4.0" />
+		<PackageReference Include="Warehouse.ClientSdks" Version="1.2.340" />
+	</ItemGroup>
+
+
+
+
+</Project>

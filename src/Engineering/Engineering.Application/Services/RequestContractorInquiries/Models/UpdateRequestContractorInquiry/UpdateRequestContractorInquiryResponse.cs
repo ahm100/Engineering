@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestContractorInquiries.Models.UpdateRequestContractorInquiry;
+
+public record UpdateRequestContractorInquiryResponse(long RequestContractorInquiyId, bool IsUpdated);

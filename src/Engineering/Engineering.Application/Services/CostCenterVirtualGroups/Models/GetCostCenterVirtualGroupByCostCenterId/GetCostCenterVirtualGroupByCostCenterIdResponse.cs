@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.CostCenterVirtualGroups.Models.GetCostCenterVirtualGroupByCostCenterId;
+
+public record GetCostCenterVirtualGroupByCostCenterIdResponse(List<GetCostCenterVirtualGroupByCostCenterIdModel> Data, int RowCount);

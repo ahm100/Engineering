@@ -1,0 +1,4 @@
+﻿namespace Engineering.Application.Services.ContractorContracts.Contracts.GetCostCentersMostPaidCC;
+
+public class GetCostCentersMostPaidCCRequest(
+    ) : IHttpRequest;

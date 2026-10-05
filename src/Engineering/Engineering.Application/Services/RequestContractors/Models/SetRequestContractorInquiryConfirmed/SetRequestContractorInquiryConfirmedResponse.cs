@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestContractors.Models.SetRequestContractorInquiryConfirmed;
+
+public record SetRequestContractorInquiryConfirmedResponse(long RequestContractorId);

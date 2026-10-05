@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.GetRequestMachineryManagementById;
+
+public record GetRequestMachineryManagementByIdRequest(long RequestMachineryId) : IHttpRequest;

@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.Branchs.Models.GetsBranchExcelExporter;
+
+public record GetsBranchExcelExporterResponse(FileContentResult File);

@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.GetRequestMachineryInquiries;
+
+public record GetRequestMachineryInquiriesRequest(long RequestMachineryId) : IHttpRequest;

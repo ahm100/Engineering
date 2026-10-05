@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.OperationInfos.Models.AddSeasonsToOperationInfos;
+
+public record AddSeasonsToOperationInfosResponse(bool IsDone);

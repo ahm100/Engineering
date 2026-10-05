@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestContractors.Models.SetRequestContractorPending;
+
+public record SetRequestContractorPendingResponse(long RequestContractorId);

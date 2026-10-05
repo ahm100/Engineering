@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FiduciaryProductManages.Models.SetFiduciaryProductRejected;
+
+public record SetFiduciaryProductRejectedResponse(long FiduciaryProductId);

@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Entities\Categories\Models\**" />
+		<Compile Remove="Entities\ProcesVerbal\Histories\**" />
+		<EmbeddedResource Remove="Entities\Categories\Models\**" />
+		<EmbeddedResource Remove="Entities\ProcesVerbal\Histories\**" />
+		<None Remove="Entities\Categories\Models\**" />
+		<None Remove="Entities\ProcesVerbal\Histories\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="IdentityServer.ClientSdk" Version="1.2.460" />
+		<PackageReference Include="MessageSender.ClientSdk" Version="1.0.108" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite" Version="8.0.7" />
+		<PackageReference Include="Gita.Backend.Shared.Domain" Version="2.2.252" />
+		<PackageReference Include="Gita.Backend.Shared.Persistence" Version="2.2.244" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Entities\ContractorEmployees\" />
+		<Folder Include="Entities\Logistics\Enums\" />
+		<Folder Include="Errors\ContractorEmployees\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\sdks\Engineering.ClientSdk\Engineering.ClientSdk.csproj" />
+	</ItemGroup>
+
+</Project>

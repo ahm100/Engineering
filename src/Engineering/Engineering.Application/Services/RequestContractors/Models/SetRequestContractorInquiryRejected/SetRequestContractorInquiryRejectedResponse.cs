@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestContractors.Models.SetRequestContractorInquiryRejected;
+
+public record SetRequestContractorInquiryRejectedResponse(long RequestContractorId);

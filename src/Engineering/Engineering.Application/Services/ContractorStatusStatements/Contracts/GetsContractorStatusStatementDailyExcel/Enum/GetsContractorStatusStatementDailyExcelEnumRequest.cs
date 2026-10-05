@@ -1,0 +1,4 @@
+namespace Engineering.Application.Services.ContractorStatusStatements.Contracts.GetsContractorStatusStatementDailyExcel.Enum;
+
+public record GetContractorStatusStatementDailyServiceExcelEnumRequest(
+) : IHttpRequest;

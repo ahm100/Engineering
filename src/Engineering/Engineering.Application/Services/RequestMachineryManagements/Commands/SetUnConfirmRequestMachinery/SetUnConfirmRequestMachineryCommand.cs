@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.RequestMachineries;
+
+namespace Engineering.Application.Services.RequestMachineryManagements.Commands.SetUnConfirmRequestMachinery;
+
+public record SetUnConfirmRequestMachineryCommand(RequestMachinery RequestMachinery) : ICommand<RequestMachinery>;

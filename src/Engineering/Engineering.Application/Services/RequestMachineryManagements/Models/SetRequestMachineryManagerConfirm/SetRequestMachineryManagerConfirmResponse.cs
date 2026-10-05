@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryManagerConfirm;
+
+public record SetRequestMachineryManagerConfirmResponse(List<long> RequestMachineryIds, bool UpdateState);

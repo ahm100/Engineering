@@ -1,0 +1,5 @@
+﻿using Engineering.Application.Services.RequestMachineries.Models.GetRequestMachineryById;
+
+namespace Engineering.Application.Services.RequestMachineries.Models.GetRequestMachineryProjectOperation;
+
+public record GetRequestMachineryProjectOperationResponse(List<ProjectOperationModel> Data, int RowCount);

@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.GetFilteredRequestMachineryManagements;
+
+public record GetFilteredRequestMachineryManagementsResponse(List<GetFilteredRequestMachineryManagementsModel> Data, int RowCount);

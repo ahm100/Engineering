@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineries.Models.GetSendManagerMachineryReports;
+
+public record GetSendManagerMachineryReportsResponse(List<GetSendManagerMachineryReportsModel> Data, int RowCount);

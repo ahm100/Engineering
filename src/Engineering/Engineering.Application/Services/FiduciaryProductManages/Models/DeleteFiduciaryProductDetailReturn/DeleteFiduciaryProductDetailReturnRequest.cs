@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FiduciaryProductManages.Models.DeleteFiduciaryProductDetailReturn;
+
+public record DeleteFiduciaryProductDetailReturnRequest(long FiduciaryProductDetailReturnId) : IHttpRequest;

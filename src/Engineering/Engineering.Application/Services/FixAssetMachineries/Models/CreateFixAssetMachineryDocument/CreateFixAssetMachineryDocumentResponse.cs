@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FixAssetMachineries.Models.CreateFixAssetMachineryDocument;
+
+public record CreateFixAssetMachineryDocumentResponse(long FixAssetMachineryId);

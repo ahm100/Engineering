@@ -1,0 +1,33 @@
+﻿namespace Engineering.Application.Services.TransportationRequests.Models.CreateSnap;
+
+public record CreateSnapRequest(
+    long TripId,
+    List<long> CostCenterIds,
+    List<long>? ProjectIds,
+    long? StartingCityId,
+    long? DestinationCityId,
+    DateTime StartDate,
+    DateTime EndDate,
+    TimeSpan? StartTime,
+    TimeSpan? EndTime,
+    string? Description,
+    long? DriverId,
+    string? DriverName,
+    string? PhoneNumber,
+    string? CarSpecifications,
+    string? NumberPlates,
+    long? CurrencyUnitId,
+    long? TransportationCostGroupId,
+    long? TransportationCostCategoryId,
+    long? SnapRequester,
+    long? SecondDestinationCityId,
+    decimal? FareAmount,
+    int? StopRate,
+    string DestinationAddress,
+    string? SecondDestinationAddress,
+    bool? PersonalPayment,
+    string StartingCityAddress,
+    bool? ReturnToStart,
+    string? RecipientName,
+    List<string>? DocumentUrls
+     ) : IHttpRequest;

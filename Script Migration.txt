@@ -1,0 +1,2 @@
+dotnet ef migrations script --idempotent  --startup-project Engineering/Engineering.Api/ --project Engineering/Engineering.Persistence/ -o "Migrations" --context "SattecDbContext" 
+dotnet ef migrations remove --startup-project Engineering/Engineering.Api/ --project Engineering/Engineering.Persistence/ -context "SattecDbContext" 

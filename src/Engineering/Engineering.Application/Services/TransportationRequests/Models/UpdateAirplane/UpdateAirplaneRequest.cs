@@ -1,0 +1,32 @@
+﻿
+namespace Engineering.Application.Services.TransportationRequests.Models.UpdateAirplane;
+
+public record UpdateAirplaneRequest(
+    long Id,
+    long TripId,
+    List<long> CostCenterIds,
+    List<long>? ProjectIds,
+    long StartingCityId,
+    long DestinationCityId,
+    DateTime StartDate,
+    DateTime EndDate,
+    TimeSpan? StartTime,
+    TimeSpan? EndTime,
+    string? Description,
+    List<long>? ProjectOperationIds,
+    List<long>? ProjectOperationDetailIds,
+    string? AccountName,
+    string? AccountNumber,
+    long? BankId,
+    long? TicketPayerId,
+    string? CardNumber,
+    long? CurrencyUnitId,
+    long? TransportationCostGroupId,
+    long? TransportationCostCategoryId,
+    long? PassengerId,
+    string? Passenger,
+    decimal? FareAmount,
+    string? DestinationAddress,
+    string? IBAN,
+    List<string>? DocumentUrls
+     ) : IHttpRequest;

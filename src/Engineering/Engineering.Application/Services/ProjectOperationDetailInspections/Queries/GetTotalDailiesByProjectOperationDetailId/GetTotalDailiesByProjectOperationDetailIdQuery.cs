@@ -1,0 +1,6 @@
+﻿using Engineering.Domain.Entities.ProjectOperationDetails;
+
+namespace Engineering.Application.Services.ProjectOperationDetailInspections.Queries.GetTotalDailiesByProjectOperationDetailId;
+
+public record GetTotalDailiesByProjectOperationDetailIdQuery(long ProjectOperationDetailId) : IQuery<ProjectOperationDetail>;
+

@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FiduciaryProductManages.Models.UpdateFiduciaryProductDetailReturn;
+
+public record UpdateFiduciaryProductDetailReturnResponse(long FiduciaryProductDetailReturnId);

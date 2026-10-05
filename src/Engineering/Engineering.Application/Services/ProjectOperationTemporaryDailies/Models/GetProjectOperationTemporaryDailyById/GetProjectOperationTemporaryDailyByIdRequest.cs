@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectOperationTemporaryDailies.Models.GetProjectOperationTemporaryDailyById;
+
+public record GetProjectOperationTemporaryDailyByIdRequest(long Id) : IHttpRequest;

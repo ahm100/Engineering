@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.CostCenterVirtualGroups.Models.DeleteCostCenterVirtualGroup;
+
+public record DeleteCostCenterVirtualGroupResponse(long CostCenterVirtualGroupId);

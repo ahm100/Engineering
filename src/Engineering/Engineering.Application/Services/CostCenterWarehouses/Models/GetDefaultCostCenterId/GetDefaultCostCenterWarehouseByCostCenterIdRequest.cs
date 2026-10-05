@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.CostCenterWarehouses.Models.GetDefaultCostCenterId;
+
+public record GetDefaultCostCenterWarehouseByCostCenterIdRequest(long CostCenterId) : IHttpRequest;

@@ -1,0 +1,6 @@
+﻿using Engineering.Application.Services.DailyProjectOperations.Models.GetsDailyOperationCreatedByProjectReport;
+
+namespace Engineering.Application.Services.DailyProjectOperations.Queries.GetsDailyOperationCreatedByProjectReport;
+
+public record GetsDailyOperationCreatedByProjectReportQuery(
+    ) : IQuery<GetsDailyOperationCreatedByProjectReportResponse?>;

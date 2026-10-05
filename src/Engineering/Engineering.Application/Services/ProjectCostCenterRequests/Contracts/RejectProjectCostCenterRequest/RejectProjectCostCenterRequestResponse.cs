@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectCostCenterRequests.Contracts.RejectProjectCostCenterRequest;
+
+public record RejectProjectCostCenterRequestResponse(bool IsDone);

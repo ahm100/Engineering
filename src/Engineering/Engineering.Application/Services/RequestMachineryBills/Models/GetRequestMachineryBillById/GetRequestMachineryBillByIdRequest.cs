@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryBills.Models.GetRequestMachineryBillById;
+
+public record GetRequestMachineryBillByIdRequest(long RequestMachineryBillId) : IHttpRequest;

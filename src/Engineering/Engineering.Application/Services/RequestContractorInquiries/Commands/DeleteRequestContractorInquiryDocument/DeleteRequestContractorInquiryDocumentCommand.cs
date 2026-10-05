@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.RequestContractors;
+
+namespace Engineering.Application.Services.RequestContractorInquiries.Commands.DeleteRequestContractorInquiryDocument;
+
+public record DeleteRequestContractorInquiryDocumentCommand(long Id) : ICommand<RequestContractorInquiryDocument>;

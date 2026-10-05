@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.TelegramChats.Models.TemporaryDeliveryTelegramMessage;
+
+public record TemporaryDeliveryTelegramMessageResponse(bool IsDone);

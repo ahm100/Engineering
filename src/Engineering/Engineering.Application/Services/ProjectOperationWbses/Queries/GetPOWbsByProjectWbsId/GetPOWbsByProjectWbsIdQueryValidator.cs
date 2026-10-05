@@ -1,0 +1,5 @@
+﻿namespace Engineering.Application.Services.ProjectOperationWbses.Queries.GetPOWbsByProjectWbsId;
+
+internal class GetPOWbsByProjectWbsIdQueryValidator
+{
+}

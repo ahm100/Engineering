@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.TelegramChats.Models.ExitRelocationForTemporaryDeliveryTelegramMessage;
+
+public record ExitRelocationForTemporaryDeliveryTelegramMessageResponse(bool IsDone);

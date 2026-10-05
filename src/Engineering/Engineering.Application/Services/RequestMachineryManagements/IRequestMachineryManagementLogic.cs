@@ -1,0 +1,68 @@
+﻿using Engineering.Application.Services.RequestMachineries.Models.GetRequestMachineryPaymentType;
+using Engineering.Application.Services.RequestMachineries.Models.GetsFilteredMachineryContractor;
+using Engineering.Application.Services.RequestMachineries.Models.GetsFilteredMachineryRequester;
+using Engineering.Application.Services.RequestMachineryManagements.Models.ActiveRequestMachineryInquiryOperator;
+using Engineering.Application.Services.RequestMachineryManagements.Models.AssignMachineryForRequestMachinery;
+using Engineering.Application.Services.RequestMachineryManagements.Models.CreateRequestMachineryInquiry;
+using Engineering.Application.Services.RequestMachineryManagements.Models.GetFilteredRequestMachineryInquieries;
+using Engineering.Application.Services.RequestMachineryManagements.Models.GetFilteredRequestMachineryManagements;
+using Engineering.Application.Services.RequestMachineryManagements.Models.GetRequestMachineryInquiries;
+using Engineering.Application.Services.RequestMachineryManagements.Models.GetRequestMachineryInquiryOperators;
+using Engineering.Application.Services.RequestMachineryManagements.Models.GetRequestMachineryManagementById;
+using Engineering.Application.Services.RequestMachineryManagements.Models.GetRequestMachineryOperators;
+using Engineering.Application.Services.RequestMachineryManagements.Models.GetsRequestMachineryManagementExcelEnum;
+using Engineering.Application.Services.RequestMachineryManagements.Models.GetsRequestMachineryManagementExcelExporter;
+using Engineering.Application.Services.RequestMachineryManagements.Models.GetsTotalFilteredRequestMachinery;
+using Engineering.Application.Services.RequestMachineryManagements.Models.InActiveRequestMachineryInquiryOperator;
+using Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryBackToOnProject;
+using Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryConfirmed;
+using Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryDone;
+using Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryInquiryAppointment;
+using Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryInquiryDone;
+using Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryInquiryOperator;
+using Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryInquiryRejected;
+using Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryManagerConfirm;
+using Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryOnProject;
+using Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryPending;
+using Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryRejected;
+using Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryResended;
+using Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryReturned;
+using Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachinerySendToManager;
+using Engineering.Application.Services.RequestMachineryManagements.Models.UpdateRequestMachineryAssignments;
+
+namespace Engineering.Application.Services.RequestMachineryManagements;
+
+public partial interface IRequestMachineryManagementLogic
+{
+    Task<Result<ActiveRequestMachineryInquiryOperatorResponse?>> ActiveRequestMachineryInquiryOperatorAsync(ActiveRequestMachineryInquiryOperatorRequest request, CT ct);
+    Task<Result<CreateRequestMachineryInquiryResponse?>> CreateRequestMachineryInquiryAsync(CreateRequestMachineryInquiryRequest request, CT ct);
+    Task<Result<AssignMachineryForRequestMachineryResponse?>> AssignMachineryForRequestMachinery(AssignMachineryForRequestMachineryRequest request, CT ct);
+    Task<Result<UpdateRequestMachineryAssignmentsResponse?>> UpdateRequestMachineryAssignmentsAsync(UpdateRequestMachineryAssignmentsRequest request, CT ct);
+    Task<Result<SetRequestMachineryInquiryOperatorResponse?>> SetRequestMachineryInquiryOperatorAsync(SetRequestMachineryInquiryOperatorRequest request, CT ct);
+    Task<Result<GetRequestMachineryInquiryOperatorsResponse?>> GetRequestMachineryInquiryOperatorsAsync(GetRequestMachineryInquiryOperatorsRequest request, CT ct);
+    Task<Result<GetRequestMachineryOperatorsResponse?>> GetRequestMachineryOperatorsAsync(GetRequestMachineryOperatorsRequest request, CT ct);
+    Task<Result<InActiveRequestMachineryInquiryOperatorResponse?>> InActiveRequestMachineryInquiryOperatorAsync(InActiveRequestMachineryInquiryOperatorRequest request, CT ct);
+    Task<Result<SetRequestMachineryConfirmedResponse?>> SetRequestMachineryConfirmedAsync(SetRequestMachineryConfirmedRequest request, CT ct);
+    Task<Result<SetRequestMachineryManagerConfirmResponse?>> SetRequestMachineryManagerConfirm(SetRequestMachineryManagerConfirmRequest request, CT ct);
+    Task<Result<SetRequestMachinerySendToManagerResponse?>> SetRequestMachinerySendToManager(SetRequestMachinerySendToManagerRequest request, CT ct);
+    Task<Result<SetRequestMachineryBackToOnProjectResponse?>> SetRequestMachineryBackToOnProject(SetRequestMachineryBackToOnProjectRequest request, CT ct);
+    Task<Result<SetRequestMachineryPendingResponse?>> SetRequestMachineryPendingAsync(SetRequestMachineryPendingRequest request, CT ct);
+    Task<Result<SetRequestMachineryRejectedResponse?>> SetRequestMachineryRejectedAsync(SetRequestMachineryRejectedRequest request, CT ct);
+    Task<Result<SetRequestMachineryReturnedResponse?>> SetRequestMachineryReturnedAsync(SetRequestMachineryReturnedRequest request, CT ct);
+    Task<Result<SetRequestMachineryResendedResponse?>> SetRequestMachineryResendedAsync(SetRequestMachineryResendedRequest request, CT ct);
+    Task<Result<SetRequestMachineryDoneResponse?>> SetRequestMachineryDoneAsync(SetRequestMachineryDoneRequest request, CT ct);
+    Task<Result<SetRequestMachineryInquiryRejectedResponse?>> SetRequestMachineryInquiryRejectedAsync(SetRequestMachineryInquiryRejectedRequest request, CT ct);
+    Task<Result<SetRequestMachineryInquiryAppointmentResponse?>> SetRequestMachineryInquiryAppointmentAsync(SetRequestMachineryInquiryAppointmentRequest request, CT ct);
+    Task<Result<SetRequestMachineryInquiryDoneResponse?>> SetRequestMachineryInquiryDoneAsync(SetRequestMachineryInquiryDoneRequest request, CT ct);
+    Task<Result<SetRequestMachineryOnProjectResponse?>> SetRequestMachineryOnProjectAsync(SetRequestMachineryOnProjectRequest request, CT ct);
+    Task<Result<GetRequestMachineryInquiriesResponse?>> GetRequestMachineryInquiriesRequestAsync(GetRequestMachineryInquiriesRequest request, CT ct);
+    Task<Result<GetFilteredRequestMachineryManagementsResponse?>> GetFilteredRequestMachineriesAsync(GetFilteredRequestMachineryManagementsRequest request, CT ct);
+    Task<Result<GetFilteredRequestMachineryInquieriesResponse?>> GetFilteredRequestMachineryInquieriesAsync(GetFilteredRequestMachineryInquieriesRequest request, CT ct);
+    Task<Result<GetRequestMachineryManagementByIdResponse?>> GetRequestMachineryByIdAsync(GetRequestMachineryManagementByIdRequest request, CT ct);
+    Task<Result<GetsFilteredMachineryRequesterResponse?>> GetsFilteredMachineryRequesterAsync(GetsFilteredMachineryRequesterRequest request, CT ct);
+    Task<Result<GetsFilteredMachineryContractorResponse?>> GetsFilteredMachineryContractorAsync(GetsFilteredMachineryContractorRequest request, CT ct);
+    Task<Result<GetsRequestMachineryManagementExcelExporterResponse?>> GetsRequestMachineryManagementExcelExporter(GetsRequestMachineryManagementExcelExporterRequest request, CT ct);
+    Task<Result<GetsRequestMachineryManagementExcelEnumResponse?>> GetsRequestMachineryManagementExcelEnum(GetsRequestMachineryManagementExcelEnumRequest request, CT ct);
+    Task<Result<GetsTotalFilteredRequestMachineryResponse?>> GetsTotalFilteredRequestMachinery(GetsTotalFilteredRequestMachineryRequest request, CT ct);
+    Task<Result<GetRequestMachineryPaymentTypeResponse?>> GetRequestMachineryPaymentType(GetRequestMachineryPaymentTypeRequest request, CT ct);
+}

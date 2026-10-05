@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectCostCenterRequests.Contracts.GetProjectCostCenterRequestById;
+
+public record GetProjectCostCenterRequestByIdRequest(long Id) : IHttpRequest;

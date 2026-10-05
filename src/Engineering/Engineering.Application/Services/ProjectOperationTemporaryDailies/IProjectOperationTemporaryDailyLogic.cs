@@ -1,0 +1,27 @@
+﻿using Engineering.Application.Services.ProjectOperationTemporaryDailies.Models.CreateProjectOperationTemporaryDaily;
+using Engineering.Application.Services.ProjectOperationTemporaryDailies.Models.DeleteProjectOperationTemporaryDaily;
+using Engineering.Application.Services.ProjectOperationTemporaryDailies.Models.GetCurrentUserTemporaryDailies;
+using Engineering.Application.Services.ProjectOperationTemporaryDailies.Models.GetFilteredProjectOperationTemporaryDailies;
+using Engineering.Application.Services.ProjectOperationTemporaryDailies.Models.GetProjectOperationTemporaryDailyById;
+using Engineering.Application.Services.ProjectOperationTemporaryDailies.Models.GetProjectOperationTemporaryDailyStatus;
+using Engineering.Application.Services.ProjectOperationTemporaryDailies.Models.GroupProjectOperationTemporaryDailyStatusChanger;
+using Engineering.Application.Services.ProjectOperationTemporaryDailies.Models.ProjectOperationTemporaryDailyGroupDelete;
+using Engineering.Application.Services.ProjectOperationTemporaryDailies.Models.ProjectOperationTemporaryDailyStatusChanger;
+using Engineering.Application.Services.ProjectOperationTemporaryDailies.Models.UpdateProjectOperationTemporaryDaily;
+
+namespace Engineering.Application.Services.ProjectOperationTemporaryDailies;
+
+public interface IProjectOperationTemporaryDailyLogic
+{
+    Task<Result<CreateProjectOperationTemporaryDailyResponse?>> CreateProjectOperationTemporaryDaily(CreateProjectOperationTemporaryDailyRequest request, CT ct);
+    Task<Result<DeleteProjectOperationTemporaryDailyResponse?>> DeleteProjectOperationTemporaryDaily(DeleteProjectOperationTemporaryDailyRequest request, CT ct);
+    Task<Result<UpdateProjectOperationTemporaryDailyResponse?>> UpdateProjectOperationTemporaryDaily(UpdateProjectOperationTemporaryDailyRequest request, CT ct);
+    Task<Result<ProjectOperationTemporaryDailyGroupDeleteResponse?>> ProjectOperationTemporaryDailyGroupDelete(ProjectOperationTemporaryDailyGroupDeleteRequest request, CT ct);
+    Task<Result<GroupProjectOperationTemporaryDailyStatusChangerResponse?>> GroupProjectOperationTemporaryDailyStatusChanger(GroupProjectOperationTemporaryDailyStatusChangerRequest request, CT ct);
+    Task<Result<ProjectOperationTemporaryDailyStatusChangerResponse?>> ProjectOperationTemporaryDailyStatusChanger(ProjectOperationTemporaryDailyStatusChangerRequest request, CT ct);
+
+    Task<Result<GetFilteredProjectOperationTemporaryDailiesResponse?>> GetFilteredProjectOperationTemporaryDailies(GetFilteredProjectOperationTemporaryDailiesRequest request, CT ct);
+    Task<Result<GetCurrentUserTemporaryDailiesResponse?>> GetCurrentUserTemporaryDailies(GetCurrentUserTemporaryDailiesRequest request, CT ct);
+    Task<Result<GetProjectOperationTemporaryDailyByIdResponse?>> GetProjectOperationTemporaryDailyById(GetProjectOperationTemporaryDailyByIdRequest request, CT ct);
+    Task<Result<GetProjectOperationTemporaryDailyStatusResponse?>> GetProjectOperationTemporaryDailyStatus(GetProjectOperationTemporaryDailyStatusRequest request, CT ct);
+}

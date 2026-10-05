@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FiduciaryProducts.Models.CreateFiduciaryProduct;
+
+public record CreateFiduciaryProductResponse(long FiduciaryProductId);

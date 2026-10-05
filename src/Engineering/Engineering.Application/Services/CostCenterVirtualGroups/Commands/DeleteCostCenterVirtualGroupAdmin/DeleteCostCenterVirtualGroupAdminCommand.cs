@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.CostCenters;
+
+namespace Engineering.Application.Services.CostCenterVirtualGroups.Commands.DeleteCostCenterVirtualGroupAdmin;
+
+public record DeleteCostCenterVirtualGroupAdminCommand(long CostCenterVirtualGroupAdminId) : ICommand<CostCenterVirtualGroupAdmin>;

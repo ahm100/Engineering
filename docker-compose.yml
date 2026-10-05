@@ -1,0 +1,27 @@
+version: '3.1'
+
+services:
+  engineering:
+    image: registry.sattec.ir/sattec/engineering:latest
+    dockerfile: src/Engineering/Engineering.Api/Dockerfile
+    container_name: sattec.services.Engineering
+    restart: unless-stopped
+
+    volumes:
+      - ./data:/data
+    ports:
+      - 3080:80
+      - 3443:443
+  
+  
+  sattec.sqlserver:
+    container_name: sattec.sqlserver
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    restart: unless-stopped
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=P@ssw0rd_123
+    ports:
+      - 11433:1433

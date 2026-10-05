@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryBills.Models.DeleteRequestMachineryBill;
+
+public record DeleteRequestMachineryBillResponse(long RequestMachineryBillId);

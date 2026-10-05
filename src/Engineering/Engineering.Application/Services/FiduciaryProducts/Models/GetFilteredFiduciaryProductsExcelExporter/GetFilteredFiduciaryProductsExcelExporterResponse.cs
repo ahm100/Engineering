@@ -1,0 +1,4 @@
+﻿namespace Engineering.Application.Services.FiduciaryProducts.Models.GetFilteredFiduciaryProductsExcelExporter;
+
+public record GetFilteredFiduciaryProductsExcelExporterResponse(FileContentResult File);
+

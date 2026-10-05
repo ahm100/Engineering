@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectOperationTemporaryDailies.Models.DeleteProjectOperationTemporaryDaily;
+
+public record DeleteProjectOperationTemporaryDailyResponse(long ProjectOperationTemporaryDailyId);

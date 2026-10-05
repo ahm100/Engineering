@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectOperationDetailInspections.Models.GetTotalDailiesByProjectOperationDetailId;
+
+public record GetTotalDailiesByProjectOperationDetailIdRequest(long ProjectOperationDetailId, bool? IncpectionRead) : IHttpRequest;

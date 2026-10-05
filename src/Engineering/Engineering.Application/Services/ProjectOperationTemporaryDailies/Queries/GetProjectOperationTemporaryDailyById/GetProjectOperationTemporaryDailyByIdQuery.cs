@@ -1,0 +1,6 @@
+﻿using Engineering.Domain.Entities.ProjectOperations;
+
+namespace Engineering.Application.Services.ProjectOperationTemporaryDailies.Queries.GetProjectOperationTemporaryDailyById;
+
+public record GetProjectOperationTemporaryDailyByIdQuery(long ProjectOperationTemporaryDailyId) : IQuery<ProjectOperationTemporaryDaily>;
+

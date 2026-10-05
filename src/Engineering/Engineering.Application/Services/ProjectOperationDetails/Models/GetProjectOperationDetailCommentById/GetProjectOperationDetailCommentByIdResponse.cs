@@ -1,0 +1,4 @@
+﻿
+namespace Engineering.Application.Services.ProjectOperationDetails.Models.GetProjectOperationDetailCommentById;
+
+public record GetProjectOperationDetailCommentByIdResponse(List<GetProjectOperationDetailCommentByIdModel> Data);

@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineries.Models.GetOnProjectMachineryReports;
+
+public record GetOnProjectMachineryReportsResponse(List<GetOnProjectMachineryReportsModel> Data, int RowCount);

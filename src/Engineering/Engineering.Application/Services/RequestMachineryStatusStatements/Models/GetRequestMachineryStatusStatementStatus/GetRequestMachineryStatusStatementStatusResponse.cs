@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryStatusStatements.Models.GetRequestMachineryStatusStatementStatus;
+
+public record GetRequestMachineryStatusStatementStatusResponse(List<EnumObject> Data);

@@ -1,0 +1,11 @@
+﻿global using Gita.Backend.Shared.Application.Abstractions.Data;
+global using Gita.Backend.Shared.Application.Abstractions.Interfaces;
+global using Gita.Backend.Shared.Domain.Base.Results;
+global using Gita.Backend.Shared.Domain.Enums.Invoice;
+global using Gita.Backend.Shared.Domain.Messages;
+global using MassTransit;
+global using MediatR;
+global using Microsoft.Extensions.Logging;
+global using Polly.Registry;
+global using Refit;
+global using CT = System.Threading.CancellationToken;

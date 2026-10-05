@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.RequestMachineries;
+
+namespace Engineering.Application.Services.RequestMachineries.Commands.DeleteRequestMachineryProjectOperation;
+
+public record DeleteRequestMachineryProjectOperationCommand(long RequestMachineryProjectOperationId) : ICommand<RequestMachineryProjectOperation>;

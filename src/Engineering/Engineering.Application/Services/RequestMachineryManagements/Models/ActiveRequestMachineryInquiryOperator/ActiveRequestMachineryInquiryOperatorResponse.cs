@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.ActiveRequestMachineryInquiryOperator;
+
+public record ActiveRequestMachineryInquiryOperatorResponse(long RequestMachineryInquiryOperatorId);

@@ -1,0 +1,5 @@
+﻿using Engineering.Domain.Entities.RequestMachineries;
+
+namespace Engineering.Application.Services.RequestMachineries.Commands.SetOnProjectRequestMachineryConfirmDate;
+
+public record SetOnProjectRequestMachineryConfirmDateCommand(RequestMachinery RequestMachinery) : ICommand<RequestMachinery>;

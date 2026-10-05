@@ -1,0 +1,5 @@
+﻿namespace Engineering.Application.Services.RequestMachineries.Queries.GetsFilteredMachineryRequester;
+
+public class GetsFilteredTransportationRequesterQueryValidator
+{
+}

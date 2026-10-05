@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectOperationTemporaryDailies.Models.GetProjectOperationTemporaryDailyStatus;
+
+public record GetProjectOperationTemporaryDailyStatusResponse(List<EnumObject> Data);

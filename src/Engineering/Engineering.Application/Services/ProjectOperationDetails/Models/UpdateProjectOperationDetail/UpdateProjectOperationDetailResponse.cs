@@ -1,0 +1,12 @@
+﻿
+using Engineering.Domain.Entities.ProjectOperations.Enums;
+
+namespace Engineering.Application.Services.ProjectOperationDetails.Models.UpdateProjectOperationDetail;
+
+public record UpdateProjectOperationDetailResponse(
+    long Id,
+    decimal Workload,
+    long ProjectOperationId,
+    ProjectOperationStatus Status,
+    string StatsusDescription
+    );

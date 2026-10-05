@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineries.Models.GetRequestMachineryMachineries;
+
+public record GetRequestMachineryMachineriesResponse(List<GetRequestMachineryMachineriesModel> Data, int RowCount);

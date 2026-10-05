@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestContractors.Models.GetFilteredRequestContractors;
+
+public record GetFilteredRequestContractorsResponse(List<GetFilteredRequestContractorsModel> Data, int RowCount);

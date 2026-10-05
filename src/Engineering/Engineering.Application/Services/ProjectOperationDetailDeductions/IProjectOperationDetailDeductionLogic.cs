@@ -1,0 +1,23 @@
+﻿using Engineering.Application.Services.ProjectOperationDetailDeductions.Models.CreateProjectOperationDetailDeduction;
+using Engineering.Application.Services.ProjectOperationDetailDeductions.Models.DeleteProjectOperationDetailDeduction;
+using Engineering.Application.Services.ProjectOperationDetailDeductions.Models.GetDeductionAmountByProjectOperationDetailId;
+using Engineering.Application.Services.ProjectOperationDetailDeductions.Models.GetProjectOperationDetailDeductionById;
+using Engineering.Application.Services.ProjectOperationDetailDeductions.Models.GetsDeductionByProjectOperationDetailId;
+using Engineering.Application.Services.ProjectOperationDetailDeductions.Models.ProjectOperationDetailDeductionGroupDelete;
+using Engineering.Application.Services.ProjectOperationDetailDeductions.Models.UpdateProjectOperationDetailDeduction;
+
+namespace Engineering.Application.Services.ProjectOperationDetailDeductions;
+
+public interface IProjectOperationDetailDeductionLogic
+{
+    ///Commands
+    Task<Result<CreateProjectOperationDetailDeductionResponse?>> CreateProjectOperationDetailDeduction(CreateProjectOperationDetailDeductionRequest request, CT ct);
+    Task<Result<UpdateProjectOperationDetailDeductionResponse?>> UpdateProjectOperationDetailDeduction(UpdateProjectOperationDetailDeductionRequest request, CT ct);
+    Task<Result<DeleteProjectOperationDetailDeductionResponse?>> DeleteProjectOperationDetailDeduction(DeleteProjectOperationDetailDeductionRequest request, CT ct);
+    Task<Result<ProjectOperationDetailDeductionGroupDeleteResponse?>> ProjectOperationDetailDeductionGroupDelete(ProjectOperationDetailDeductionGroupDeleteRequest request, CT ct);
+
+    ///Queries
+    Task<Result<GetProjectOperationDetailDeductionByIdResponse?>> GetProjectOperationDetailDeductionById(GetProjectOperationDetailDeductionByIdRequest request, CT ct);
+    Task<Result<GetsDeductionByProjectOperationDetailIdResponse?>> GetsDeductionByProjectOperationDetailId(GetsDeductionByProjectOperationDetailIdRequest request, CT ct);
+    Task<Result<GetDeductionAmountByProjectOperationDetailIdResponse?>> GetDeductionAmountByProjectOperationDetailId(GetDeductionAmountByProjectOperationDetailIdRequest request, CT ct);
+}

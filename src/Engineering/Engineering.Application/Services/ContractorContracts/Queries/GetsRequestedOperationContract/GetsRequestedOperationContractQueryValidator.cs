@@ -1,0 +1,6 @@
+﻿
+namespace Engineering.Application.Services.ContractorContracts.Queries.GetsRequestedOperationContract;
+
+public class GetsRequestedOperationContractQueryValidator : AbstractValidator<GetsRequestedOperationContractQuery>
+{
+}

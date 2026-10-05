@@ -1,0 +1,38 @@
+﻿using Engineering.Domain.Entities.ContractorContracts.Enums;
+
+namespace Engineering.Application.Services.ContractorContracts.Contracts.GetsFilteredContractorContractReports;
+
+public record GetsFilteredContractorContractReportsResponse(
+    List<GetsFilteredContractorContractReportsModel> Data,
+    int RowCount
+    );
+
+public record GetsFilteredContractorContractReportsModel
+{
+    public long ContractorId { get; set; }
+    public string? Contractor { get; set; } = string.Empty;
+    public long Id { get; set; }
+    public ContractorContractType ContractorContractTypeId { get; set; }
+    public string? ContractorContractTypeName => ContractorContractTypeId.GetEnumDescription();
+    public ContractorContractType ContractorContractTypeCode => ContractorContractTypeId;
+    public ContractorContractStatus Status { get; set; }
+    public string StatusDescription => Status.GetEnumDescription();
+    public long? CurrencyId { get; set; }
+    public string? Currency { get; set; } = string.Empty;
+    public DateTime StartDate { get; set; }
+    public DateTime EndDate { get; set; }
+    public decimal? TotalAmount { get; set; }
+    public decimal? PercentageDoingJobWell { get; set; }
+    public decimal? DoingJobWellAmount { get; set; }
+    public decimal? PercentageAdvancePayment { get; set; }
+    public decimal? AdvancePaymentAmount { get; set; }
+    public decimal? DailyLatenessPenalty { get; set; }
+    public int? WorkDonePercent { get; set; }
+    public int? WorkDeliveryPercent { get; set; }
+    public int? WorkCompletionPercent { get; set; }
+    public string? Description { get; set; }
+    public long? CreatorId { get; set; }
+    public string? Creator { get; set; } = string.Empty;
+    public DateTime Created { get; set; }
+}
+

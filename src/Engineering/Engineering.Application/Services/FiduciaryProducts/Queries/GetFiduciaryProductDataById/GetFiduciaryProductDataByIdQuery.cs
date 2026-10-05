@@ -1,0 +1,5 @@
+﻿using Engineering.Application.Services.FiduciaryProducts.Models.GetFiduciaryProductById;
+
+namespace Engineering.Application.Services.FiduciaryProducts.Queries.GetFiduciaryProductDataById;
+
+public record GetFiduciaryProductDataByIdQuery(long FiduciaryProductId) : IQuery<GetFiduciaryProductByIdResponse>;

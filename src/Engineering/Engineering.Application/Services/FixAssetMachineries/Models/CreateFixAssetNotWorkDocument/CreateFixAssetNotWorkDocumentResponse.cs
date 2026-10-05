@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.FixAssetMachineries.Models.CreateFixAssetNotWorkDocument;
+
+public record CreateFixAssetNotWorkDocumentResponse(long FixAssetNotWorkId);

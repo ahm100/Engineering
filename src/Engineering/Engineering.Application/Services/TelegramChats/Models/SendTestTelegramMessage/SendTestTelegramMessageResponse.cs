@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.TelegramChats.Models.SendTestTelegramMessage;
+
+public record SendTestTelegramMessageResponse(bool IsDone);

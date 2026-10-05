@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryBills.Models.UpdateRequestMachineryBill;
+
+public record UpdateRequestMachineryBillResponse(long RequestMachineryBillId);

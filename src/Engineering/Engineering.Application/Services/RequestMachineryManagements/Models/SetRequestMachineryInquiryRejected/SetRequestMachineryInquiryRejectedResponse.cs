@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryInquiryRejected;
+
+public record SetRequestMachineryInquiryRejectedResponse(long RequestMachineryId);

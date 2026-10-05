@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryBills.Models.CreateRequestMachineryBill;
+
+public record CreateRequestMachineryBillResponse(long RequestMachieryBill, bool IsCreated);

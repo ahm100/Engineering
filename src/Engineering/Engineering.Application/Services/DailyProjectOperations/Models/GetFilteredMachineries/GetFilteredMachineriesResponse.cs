@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.DailyProjectOperations.Models.GetFilteredMachineries;
+
+public record GetFilteredMachineriesResponse(List<GetFilteredMachineriesResponseModel> Data, int RowCount);

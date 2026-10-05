@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryOnProject;
+
+public record SetRequestMachineryOnProjectResponse(long RequestMachineryId);

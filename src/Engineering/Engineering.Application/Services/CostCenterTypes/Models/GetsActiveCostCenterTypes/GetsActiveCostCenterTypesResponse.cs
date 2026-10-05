@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.CostCenterTypes.Models.GetsActiveCostCenterTypes;
+
+public record GetsActiveCostCenterTypesResponse(List<GetsActiveCostCenterTypesModel> Data, int RowCount);

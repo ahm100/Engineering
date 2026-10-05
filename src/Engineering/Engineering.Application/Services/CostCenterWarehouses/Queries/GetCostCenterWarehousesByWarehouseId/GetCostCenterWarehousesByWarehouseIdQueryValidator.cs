@@ -1,0 +1,6 @@
+﻿
+namespace Engineering.Application.Services.CostCenterWarehouses.Queries.GetCostCenterWarehousesByWarehouseId;
+
+public class GetCostCenterWarehousesByWarehouseIdQueryValidator
+{
+}

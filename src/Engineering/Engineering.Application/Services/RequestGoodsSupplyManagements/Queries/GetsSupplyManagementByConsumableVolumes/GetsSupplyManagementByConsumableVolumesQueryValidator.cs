@@ -1,0 +1,7 @@
+﻿
+namespace Engineering.Application.RequestGoodsSupplyManagements.Queries.GetsSupplyManagementByConsumableVolumes;
+
+public class GetsSupplyManagementByConsumableVolumesQueryValidator
+{
+
+}

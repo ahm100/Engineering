@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryResended;
+
+public record SetRequestMachineryResendedResponse(long RequestMachineryId);

@@ -1,0 +1,40 @@
+﻿using Engineering.Domain.Entities.ProjectOperations.Enums;
+
+namespace Engineering.Application.Services.ProjectOperations.Models.GetsWithoutContract;
+
+public record GetsWithoutContractModel(
+    long Id,
+    long OperationInfoId,
+    string OperationInfoName,
+    string OperationInfoCode,
+    long OperationInfoMeasurementId,
+    string? OperationInfoMeasurementName,
+    long? ProjectId,
+    string? ProjectName,
+    string? ProjectCode,
+    long MeasurementId,
+    string? MeasurementName,
+    long? Workload,
+    long? DoneWorkload,
+    long? RemainingWorkload,
+    decimal TolerancePercentage,
+    decimal? Price,
+    int? Priority,
+    ProjectOperationStatus Status,
+    string StatusDescription,
+    long? DependencyId,
+    bool? IsDefaultRelation,
+    long? RelationId,
+    string? RelationName,
+    string? RelationCode,
+    long? RelationMeasurementId,
+    string? RelationMeasurementName,
+    int? RelationDays,
+    ProjectOperationDependencyType? Type,
+    string? TypeDescription,
+    List<string>? Urls,
+    string? Description,
+    bool? GoodsInProgress,
+    long? CompanyId,
+    string? CompanyNameFa
+    );

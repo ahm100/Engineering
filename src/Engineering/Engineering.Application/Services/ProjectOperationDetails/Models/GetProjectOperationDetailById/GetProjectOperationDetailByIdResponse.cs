@@ -1,0 +1,55 @@
+﻿using Engineering.Application.Services.ProjectOperationDetails.Models.DataModels;
+using Engineering.Application.Services.ProjectOperationDetails.Models.DataModels.Responses;
+using Engineering.Application.Services.ProjectOperationDetails.Models.GetsProjectOperationDetailStatus;
+using Engineering.Domain.Entities.ProjectOperationDetails.Enums;
+
+namespace Engineering.Application.Services.ProjectOperationDetails.Models.GetProjectOperationDetailById;
+
+public record GetProjectOperationDetailByIdResponse(
+    long Id,
+    string? Code,
+    long ProjectOperationId,
+    long ProjectId,
+    string ProjectName,
+    long OperationInfoId,
+    string OperationInfoName,
+    long OperationLocationId,
+    string PrivateName,
+    string PrivateCode,
+    string PublicName,
+    string PublicCode,
+    string? StartDate,
+    string? EndDate,
+    decimal Length,
+    bool LengthChangeable,
+    decimal Width,
+    bool WidthChangeable,
+    decimal Height,
+    bool HeightChangeable,
+    decimal Weight,
+    bool WeightChangeable,
+    decimal Number,
+    bool NumberChangeable,
+    decimal FinalAmount,
+    decimal DuductionFinalAmount,
+    decimal TotalFinalAmount,
+    ProjectOperationDetailStatus Status,
+    GetsProjectOperationDetailStatusModel StatusModel,
+    string? StatusTitle,
+    int Priority,
+    int Day,
+    int Hour,
+    List<string>? Urls,
+    long? CreatedProductId,
+    string? CreatedProductName,
+    string? Description,
+    List<PlannerDataModel?> Planners,
+    List<ImplementationAssistantDataModel?> ImplementationAssistants,
+    List<TechnicalAssistantDataModel?> TechnicalAssistants,
+    List<ContractorServiceDataModel?> ContractorServices,
+    List<ExpertDataModel?> Experts,
+    List<MachineryDataModel?> Machineries,
+    List<ProductDataModel?> Products,
+    List<DeductionDataModel?> Deductions,
+    CreatorModel Creator
+    );

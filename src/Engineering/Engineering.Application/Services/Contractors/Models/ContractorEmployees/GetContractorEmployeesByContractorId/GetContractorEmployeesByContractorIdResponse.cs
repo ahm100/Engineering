@@ -1,0 +1,4 @@
+﻿namespace Engineering.Application.Services.Contractors.Models.ContractorEmployees.GetContractorEmployeesByContractorId;
+
+public record GetContractorEmployeesByContractorIdResponse(List<GetContractorEmployeesByContractorIdModel> Data, int RowCount);
+

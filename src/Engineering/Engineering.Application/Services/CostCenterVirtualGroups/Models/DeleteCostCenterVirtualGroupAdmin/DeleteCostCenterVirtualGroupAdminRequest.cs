@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.CostCenterVirtualGroups.Models.DeleteCostCenterVirtualGroupAdmin;
+
+public record DeleteCostCenterVirtualGroupAdminRequest(long CostCenterVirtualGroupAdminId) : IHttpRequest;

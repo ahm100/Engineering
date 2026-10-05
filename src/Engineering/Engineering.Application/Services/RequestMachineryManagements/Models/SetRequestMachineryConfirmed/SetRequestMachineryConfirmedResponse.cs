@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.RequestMachineryManagements.Models.SetRequestMachineryConfirmed;
+
+public record SetRequestMachineryConfirmedResponse(long RequestMachineryId);

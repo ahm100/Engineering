@@ -1,0 +1,31 @@
+﻿using Engineering.Application.Services.ProjectOperationDetailInspections.Models.CreateProjectOperationDetailInspection;
+using Engineering.Application.Services.ProjectOperationDetailInspections.Models.DeleteProjectOperationDetailInspection;
+using Engineering.Application.Services.ProjectOperationDetailInspections.Models.GetFilteredProjectOperationDetailInspections;
+using Engineering.Application.Services.ProjectOperationDetailInspections.Models.GetProjectOperationDetailInspectionById;
+using Engineering.Application.Services.ProjectOperationDetailInspections.Models.GetsInspectionCreator;
+using Engineering.Application.Services.ProjectOperationDetailInspections.Models.GetsInspectionReport;
+using Engineering.Application.Services.ProjectOperationDetailInspections.Models.GetsInspectionReportExcelEnum;
+using Engineering.Application.Services.ProjectOperationDetailInspections.Models.GetsInspectionReportExcelExporter;
+using Engineering.Application.Services.ProjectOperationDetailInspections.Models.GetsTotalInspectionReport;
+using Engineering.Application.Services.ProjectOperationDetailInspections.Models.GetTotalDailiesByProjectOperationDetailId;
+using Engineering.Application.Services.ProjectOperationDetailInspections.Models.ProjectOperationDetailInspectionGroupDelete;
+using Engineering.Application.Services.ProjectOperationDetailInspections.Models.UpdateProjectOperationDetailInspection;
+
+namespace Engineering.Application.Services.ProjectOperationDetailInspections;
+
+public interface IProjectOperationDetailInspectionLogic
+{
+    Task<Result<CreateProjectOperationDetailInspectionResponse?>> CreateProjectOperationDetailInspection(CreateProjectOperationDetailInspectionRequest request, CT ct);
+    Task<Result<UpdateProjectOperationDetailInspectionResponse?>> UpdateProjectOperationDetailInspection(UpdateProjectOperationDetailInspectionRequest request, CT ct);
+    Task<Result<ProjectOperationDetailInspectionGroupDeleteResponse?>> ProjectOperationDetailInspectionGroupDelete(ProjectOperationDetailInspectionGroupDeleteRequest request, CT ct);
+    Task<Result<DeleteProjectOperationDetailInspectionResponse?>> DeleteProjectOperationDetailInspection(DeleteProjectOperationDetailInspectionRequest request, CT ct);
+
+    Task<Result<GetFilteredProjectOperationDetailInspectionsResponse?>> GetFilteredProjectOperationDetailInspections(GetFilteredProjectOperationDetailInspectionsRequest request, CT ct);
+    Task<Result<GetProjectOperationDetailInspectionByIdResponse?>> GetProjectOperationDetailInspectionById(GetProjectOperationDetailInspectionByIdRequest request, CT ct);
+    Task<Result<GetTotalDailiesByProjectOperationDetailIdResponse?>> GetTotalDailiesByProjectOperationDetailId(GetTotalDailiesByProjectOperationDetailIdRequest request, CT ct);
+    Task<Result<GetsInspectionReportResponse?>> GetsInspectionReport(GetsInspectionReportRequest request, CT ct);
+    Task<Result<GetsInspectionReportExcelExporterResponse?>> GetsInspectionReportExcelExporter(GetsInspectionReportExcelExporterRequest request, CT ct);
+    Task<Result<GetsInspectionReportExcelEnumResponse?>> GetsInspectionReportExcelEnum(GetsInspectionReportExcelEnumRequest request, CT ct);
+    Task<Result<GetsTotalInspectionReportResponse?>> GetsTotalInspectionReport(GetsTotalInspectionReportRequest request, CT ct);
+    Task<Result<GetsInspectionCreatorResponse?>> GetsInspectionCreator(GetsInspectionCreatorRequest request, CT ct);
+}

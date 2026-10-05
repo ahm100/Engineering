@@ -1,0 +1,3 @@
+﻿namespace Engineering.Application.Services.ProjectOperationDetailSchedulings.Models.GetSchedulingProjectOperations;
+
+public record GetSchedulingOperationInfosResponse(List<GetSchedulingOperationInfosResponseModel> Data, int RowCount);
